@@ -1,0 +1,262 @@
+.hero {
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  background-color: #222;
+}
+
+.hero__container {
+  z-index: 1;
+}
+.hero__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  padding: 240px 0 122px;
+  max-width: 570px;
+}
+
+.hero__heading {
+  margin-bottom: 19px;
+  font-weight: 700;
+  font-size: 4.5rem;
+  line-height: 1.16;
+  color: #fff;
+}
+.hero__descr {
+  margin-bottom: 92px;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.67;
+}
+
+.hero__btn {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  padding: 17px 32px;
+  border: 3px solid var(--theme-color);
+  border-radius: 100px;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.667;
+  outline: 2px solid transparent;
+  outline-offset: 3px;
+  background-color: var(--theme-color);
+  -webkit-transition-property: border-color, background-color, outline-color;
+  -o-transition-property: border-color, background-color, outline-color;
+  transition-property: border-color, background-color, outline-color;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+
+.hero__btn:focus {
+  outline-color: var(--theme-color-light-outline);
+}
+.hero__btn:focus:active {
+  border-color: var(--theme-color-light);
+  background-color: var(--theme-color-dark);
+  outline-color: transparent;
+}
+
+.hero__swiper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+}
+.swiper-slide {
+  overflow: hidden;
+}
+.swiper-bg {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  -webkit-animation: bg-floating 5s ease-in-out infinite alternate;
+  animation: bg-floating 5s ease-in-out infinite alternate;
+}
+.swiper-bg_1 {
+  background-image: url("../img/backgrounds/hero-bg1-1920.jpg");
+  background-image: url("../img/backgrounds/hero-bg1-1920.webp");
+}
+.swiper-bg_2 {
+  background-image: url("../img/backgrounds/hero-bg2-1920.jpg");
+  background-image: url("../img/backgrounds/hero-bg2-1920.webp");
+}
+.swiper-bg_3 {
+  background-image: url("../img/backgrounds/hero-bg3-1920.jpg");
+  background-image: url("../img/backgrounds/hero-bg3-1920.webp");
+}
+
+@-webkit-keyframes bg-floating {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+}
+
+@keyframes bg-floating {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+}
+
+/* .about__container {
+} */
+
+.about__content {
+  padding: 88px 0 70px;
+  max-width: 1080px;
+  color: #333;
+}
+
+.about__heading {
+  margin-bottom: 25px;
+}
+
+.about__descr {
+  font-size: 1rem;
+  line-height: 2;
+}
+
+@media screen and (max-width: 1024px) {
+  .swiper-bg_1 {
+    background-image: url("../img/backgrounds/hero-bg1-1024.jpg");
+    background-image: url("../img/backgrounds/hero-bg1-1024.webp");
+  }
+  .swiper-bg_2 {
+    background-image: url("../img/backgrounds/hero-bg2-1024.jpg");
+    background-image: url("../img/backgrounds/hero-bg2-1024.webp");
+  }
+  .swiper-bg_3 {
+    background-image: url("../img/backgrounds/hero-bg3-1024.jpg");
+    background-image: url("../img/backgrounds/hero-bg3-1024.webp");
+  }
+  .hero__content {
+    padding: 212px 0 113px;
+    max-width: 660px;
+  }
+  .hero__heading {
+    margin-bottom: 11px;
+  }
+  .hero__descr {
+    margin-bottom: 134px;
+  }
+  .about__content {
+    padding-bottom: 70px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .swiper-bg_1 {
+    background-image: url("../img/backgrounds/hero-bg1-768.jpg");
+    background-image: url("../img/backgrounds/hero-bg1-768.webp");
+  }
+  .swiper-bg_2 {
+    background-image: url("../img/backgrounds/hero-bg2-768.jpg");
+    background-image: url("../img/backgrounds/hero-bg2-768.webp");
+  }
+  .swiper-bg_3 {
+    background-image: url("../img/backgrounds/hero-bg3-768.jpg");
+    background-image: url("../img/backgrounds/hero-bg3-768.webp");
+  }
+  .hero__content {
+    padding: 27.6vw 0 14.84vw;
+    max-width: 660px;
+  }
+  .hero__heading {
+    margin-bottom: 11px;
+    font-size: 9.375vw;
+  }
+  .hero__descr {
+    margin-bottom: 134px;
+    font-size: 1.125rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .hero__content {
+    padding: 24.375vw 0 14.06vw;
+    max-width: 660px;
+  }
+  .hero__heading {
+    margin-bottom: 13px;
+    font-size: 2rem;
+    line-height: 1.15625;
+    text-align: center;
+  }
+  .hero__descr {
+    margin-bottom: 41px;
+    font-size: 0.75rem;
+    line-height: 1.33;
+    text-align: center;
+  }
+  .hero__btn {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    padding: 10px 15px 12px;
+    font-size: 0.75rem;
+    line-height: 1;
+  }
+
+  .swiper-bg_1 {
+    background-image: url("../img/backgrounds/hero-bg1-320.jpg");
+    background-image: url("../img/backgrounds/hero-bg1-320.webp");
+  }
+  .swiper-bg_2 {
+    background-image: url("../img/backgrounds/hero-bg2-320.jpg");
+    background-image: url("../img/backgrounds/hero-bg2-320.webp");
+  }
+  .swiper-bg_3 {
+    background-image: url("../img/backgrounds/hero-bg3-320.jpg");
+    background-image: url("../img/backgrounds/hero-bg3-320.webp");
+  }
+  .hero__content {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 78px 10px 44px;
+    max-width: 290px;
+  }
+
+  .about__content {
+    padding: 56px 0 41px;
+  }
+  .about__heading {
+    margin-bottom: 16px;
+  }
+  .about__descr {
+    font-size: 0.875rem;
+  }
+}
+
+@media (hover: hover) {
+  .hero__btn:hover {
+    border-color: #d1a9f0;
+  }
+}

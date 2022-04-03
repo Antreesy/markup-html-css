@@ -1,6 +1,18 @@
+/* CSS Styles */
 @import url("common-styles.css");
+
+@import url("libs/burger-menu.css");
+@import url("libs/dropdown-menu.css");
+
 @import url("header-styles.css");
-@import url("hero-styles.css");
+@import url("hero-about-styles.css");
+@import url("gallery-styles.css");
+@import url("catalogue-styles.css");
+@import url("events-styles.css");
+@import url("books-styles.css");
+@import url("projects-styles.css");
+@import url("contacts-footer-styles.css");
+
 @font-face {
   font-family: "OpenSans";
   src: local("OpenSans-Regular"),
@@ -35,4 +47,19 @@
   font-weight: 700;
   font-style: normal;
   font-display: swap;
+}
+
+:root {
+  --container-padding: 50px;
+  --theme-color: #9d5cd0;
+  --theme-color-light-outline: #d1a9f0;
+  --theme-color-light: #c283f3;
+  --theme-color-dark: #7943a4;
+  --checkbox-size: 12px;
+}
+
+@media screen and (max-width: 576px) {
+  :root {
+    --container-padding: 15px;
+  }
 }
