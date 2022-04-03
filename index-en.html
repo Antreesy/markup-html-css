@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blanchard - художественная галерея</title>
+  <title>Blanchard - art gallery</title>
   <link rel="stylesheet" href="css/libs/normalize.css">
   <link rel="stylesheet" href="css/libs/simplebar.css">
   <link rel="stylesheet" href="css/libs/swiper-bundle.css">
@@ -15,13 +15,13 @@
 </head>
 
 <body>
-  <h1 class="visually-hidden">Blanchard - художественная галерея</h1>
+  <h1 class="visually-hidden">Blanchard - art gallery</h1>
   <header class="header">
     <div class="header__top-container">
       <div class="container header__container">
         <div class="header__content header__content_top">
           <div class="burger header__burger">
-            <button class="burger__opener" aria-label="Открыть меню">
+            <button class="burger__opener" aria-label="Open menu">
               <div class="burger__opener-top"></div>
               <div class="burger__opener-mid"></div>
               <div class="burger__opener-bot"></div>
@@ -29,7 +29,7 @@
           </div>
 
           <div class="header__menu">
-            <button class="burger-closer" aria-label="Закрыть меню">
+            <button class="burger-closer" aria-label="Close menu">
               <span class="burger-closer-l"></span>
               <span class="burger-closer-r"></span>
             </button>
@@ -37,26 +37,27 @@
             <nav class="nav header__nav">
               <ul class="ul nav__list">
                 <li class="nav__item">
-                  <a class="link nav__link" href="#about">О нас</a>
+                  <a class="link nav__link" href="#about">About</a>
                 </li>
                 <li class="nav__item">
-                  <a class="link nav__link" href="#gallery">Галерея</a>
+                  <a class="link nav__link" href="#gallery">Gallery</a>
                 </li>
                 <li class="nav__item">
-                  <a class="link nav__link" href="#catalogue">Каталог</a>
+                  <a class="link nav__link" href="#catalogue">Catalogue</a>
                 </li>
                 <li class="nav__item">
-                  <a class="link nav__link" href="#events">События</a>
+                  <a class="link nav__link" href="#events">Events</a>
                 </li>
                 <li class="nav__item">
-                  <a class="link nav__link" href="#books">Издания</a>
+                  <a class="link nav__link" href="#books">Books</a>
                 </li>
                 <li class="nav__item">
-                  <a class="link nav__link" href="#projects">Проекты</a>
+                  <a class="link nav__link" href="#projects">Projects</a>
                 </li>
                 <li class="nav__item">
-                  <a class="link nav__link" href="#contacts">Контакты</a>
+                  <a class="link nav__link" href="#contacts">Contacts</a>
                 </li>
+
               </ul>
             </nav>
 
@@ -68,28 +69,29 @@
                     d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z"
                     fill="white" />
                 </svg>
-                Войти
+                Log in
               </a>
 
               <div class="nav__lang-wrapper">
-                <a class="link nav__link nav__link-lang" href="./index-en.html">EN</a>
+                <a class="link nav__link nav__link-lang is-active" href="./index-en.html">EN</a>
                 /
-                <a class="link nav__link nav__link-lang is-active" href="./index.html">RU</a>
+                <a class="link nav__link nav__link-lang" href="./index.html">RU</a>
               </div>
             </div>
-
           </div>
 
+
+
           <a class="link header__logo-link">
-            <img class="logo header__logo" src="img/logo.svg" loading="lazy" alt="Blanchard logo">
+            <img class="logo header__logo" src="img/logo-en.svg" loading="lazy" alt="Blanchard logo">
           </a>
 
-          <button class="header__search-clicker" aria-label="Поиск"></button>
+          <button class="header__search-clicker" aria-label="Search"></button>
           <form class="search header__search header__search-top" action="https://postman-echo.com/post" target="_blank"
             method="post">
-            <input class="search__input" type="search" name="search" id="search-top" placeholder="Поиск по сайту">
-            <button class="btn search__btn" type="submit" aria-label="Поиск"></button>
-            <button class="btn search__cancel" type="reset" aria-label="Закрыть"></button>
+            <input class="search__input" type="search" name="search" id="search-top" placeholder="Search at this site">
+            <button class="btn search__btn" type="submit" aria-label="Search"></button>
+            <button class="btn search__cancel" type="reset" aria-label="Close"></button>
           </form>
 
         </div>
@@ -101,77 +103,77 @@
         <div class="header__content header__content_bottom">
           <ul class="ul header__dropdown-wrapper">
             <li class="dropdown header__dropdown">
-              <button class="btn dropdown__btn">Реализм</button>
+              <button class="btn dropdown__btn">Realism</button>
               <div class="dropdown__block">
-                <ul class="ul dropdown__list" data-simplebar data-simplebar-aria-label="художники реализма">
-                  <li class="dropdown__item"><a class="link dropdown__link" href="">Тинторетто</a></li>
-                  <li class="dropdown__item"><a class="link dropdown__link" href="">Фридрих</a></li>
-                  <li class="dropdown__item"><a class="link dropdown__link" href="">Леонардо</a></li>
-                  <li class="dropdown__item"><a class="link dropdown__link" href="">Верроккьо</a></li>
-                  <li class="dropdown__item"><a class="link dropdown__link" href="">Кандинский</a></li>
-                  <li class="dropdown__item"><a class="link dropdown__link" href="">Маринетти</a></li>
-                  <li class="dropdown__item"><a class="link dropdown__link" href="">Малевич</a></li>
-                  <li class="dropdown__item"><a class="link dropdown__link" href="">Пикассо</a></li>
+                <ul class="ul dropdown__list" data-simplebar data-simplebar-aria-label="realism artists">
+                  <li class="dropdown__item"><a class="link dropdown__link" href="">Tintoretto</a></li>
+                  <li class="dropdown__item"><a class="link dropdown__link" href="">Friedrich</a></li>
+                  <li class="dropdown__item"><a class="link dropdown__link" href="">Leonardo</a></li>
+                  <li class="dropdown__item"><a class="link dropdown__link" href="">Verrocchio</a></li>
+                  <li class="dropdown__item"><a class="link dropdown__link" href="">Kandinsky</a></li>
+                  <li class="dropdown__item"><a class="link dropdown__link" href="">Marinetti</a></li>
+                  <li class="dropdown__item"><a class="link dropdown__link" href="">Malevich</a></li>
+                  <li class="dropdown__item"><a class="link dropdown__link" href="">Picasso</a></li>
                 </ul>
               </div>
             </li>
             <li class="dropdown header__dropdown">
-              <button class="btn dropdown__btn">Импрессионизм</button>
+              <button class="btn dropdown__btn">Impressionism</button>
               <div class="dropdown__block">
-                <ul class="ul dropdown__list" data-simplebar data-simplebar-aria-label="художники импрессионизма">
-                  <li class="dropdown__item"><a class="link dropdown__link" href="">Моне</a></li>
-                  <li class="dropdown__item"><a class="link dropdown__link" href="">Сислей</a></li>
-                  <li class="dropdown__item"><a class="link dropdown__link" href="">Мане</a></li>
-                  <li class="dropdown__item"><a class="link dropdown__link" href="">Ренуар</a></li>
-                  <li class="dropdown__item"><a class="link dropdown__link" href="">Кандинский</a></li>
-                  <li class="dropdown__item"><a class="link dropdown__link" href="">Маринетти</a></li>
-                  <li class="dropdown__item"><a class="link dropdown__link" href="">Малевич</a></li>
-                  <li class="dropdown__item"><a class="link dropdown__link" href="">Пикассо</a></li>
-                  <li class="dropdown__item"><a class="link dropdown__link" href="">Карра</a></li>
-                  <li class="dropdown__item"><a class="link dropdown__link" href="">Прателла</a></li>
-                  <li class="dropdown__item"><a class="link dropdown__link" href="">Северини</a></li>
-                  <li class="dropdown__item"><a class="link dropdown__link" href="">Балла</a></li>
+                <ul class="ul dropdown__list" data-simplebar data-simplebar-aria-label="impressionism artists">
+                  <li class="dropdown__item"><a class="link dropdown__link" href="">Monet</a></li>
+                  <li class="dropdown__item"><a class="link dropdown__link" href="">Sisley</a></li>
+                  <li class="dropdown__item"><a class="link dropdown__link" href="">Mane</a></li>
+                  <li class="dropdown__item"><a class="link dropdown__link" href="">Renoir</a></li>
+                  <li class="dropdown__item"><a class="link dropdown__link" href="">Kandinsky</a></li>
+                  <li class="dropdown__item"><a class="link dropdown__link" href="">Marinetti</a></li>
+                  <li class="dropdown__item"><a class="link dropdown__link" href="">Malevich</a></li>
+                  <li class="dropdown__item"><a class="link dropdown__link" href="">Picasso</a></li>
+                  <li class="dropdown__item"><a class="link dropdown__link" href="">Karra</a></li>
+                  <li class="dropdown__item"><a class="link dropdown__link" href="">Pratella</a></li>
+                  <li class="dropdown__item"><a class="link dropdown__link" href="">Severini</a></li>
+                  <li class="dropdown__item"><a class="link dropdown__link" href="">Balla</a></li>
                 </ul>
               </div>
             </li>
             <li class="dropdown header__dropdown">
-              <button class="btn dropdown__btn">Постимпрессионизм</button>
+              <button class="btn dropdown__btn">Post-impressionism</button>
               <div class="dropdown__block">
-                <ul class="ul dropdown__list" data-simplebar data-simplebar-aria-label="художники постимпрессионизма">
-                  <li class="dropdown__item"><a class="link dropdown__link" href="">Ван Гог</a></li>
-                  <li class="dropdown__item"><a class="link dropdown__link" href="">Сезанн</a></li>
-                  <li class="dropdown__item"><a class="link dropdown__link" href="">Гоген</a></li>
-                  <li class="dropdown__item"><a class="link dropdown__link" href="">Сёра</a></li>
+                <ul class="ul dropdown__list" data-simplebar data-simplebar-aria-label="post-impressionism artists">
+                  <li class="dropdown__item"><a class="link dropdown__link" href="">Van Gogh</a></li>
+                  <li class="dropdown__item"><a class="link dropdown__link" href="">Cezanne</a></li>
+                  <li class="dropdown__item"><a class="link dropdown__link" href="">Gauguin</a></li>
+                  <li class="dropdown__item"><a class="link dropdown__link" href="">Seurat</a></li>
                 </ul>
               </div>
             </li>
             <li class="dropdown header__dropdown">
-              <button class="btn dropdown__btn">Авангард</button>
+              <button class="btn dropdown__btn">Avant-garde</button>
               <div class="dropdown__block">
-                <ul class="ul dropdown__list" data-simplebar data-simplebar-aria-label="художники авангарда">
-                  <li class="dropdown__item"><a class="link dropdown__link" href="">Кандинский</a></li>
-                  <li class="dropdown__item"><a class="link dropdown__link" href="">Маринетти</a></li>
-                  <li class="dropdown__item"><a class="link dropdown__link" href="">Малевич</a></li>
-                  <li class="dropdown__item"><a class="link dropdown__link" href="">Пикассо</a></li>
+                <ul class="ul dropdown__list" data-simplebar data-simplebar-aria-label="avant-garde artists">
+                  <li class="dropdown__item"><a class="link dropdown__link" href="">Kandinsky</a></li>
+                  <li class="dropdown__item"><a class="link dropdown__link" href="">Marinetti</a></li>
+                  <li class="dropdown__item"><a class="link dropdown__link" href="">Malevich</a></li>
+                  <li class="dropdown__item"><a class="link dropdown__link" href="">Picasso</a></li>
                 </ul>
               </div>
             </li>
             <li class="dropdown header__dropdown">
-              <button class="btn dropdown__btn">Футуризм</button>
+              <button class="btn dropdown__btn">Futurism</button>
               <div class="dropdown__block">
-                <ul class="ul dropdown__list" data-simplebar data-simplebar-aria-label="художники футуризма">
-                  <li class="dropdown__item"><a class="link dropdown__link" href="">Карра</a></li>
-                  <li class="dropdown__item"><a class="link dropdown__link" href="">Прателла</a></li>
-                  <li class="dropdown__item"><a class="link dropdown__link" href="">Северини</a></li>
-                  <li class="dropdown__item"><a class="link dropdown__link" href="">Балла</a></li>
+                <ul class="ul dropdown__list" data-simplebar data-simplebar-aria-label="futurism artists">
+                  <li class="dropdown__item"><a class="link dropdown__link" href="">Karra</a></li>
+                  <li class="dropdown__item"><a class="link dropdown__link" href="">Pratella</a></li>
+                  <li class="dropdown__item"><a class="link dropdown__link" href="">Severini</a></li>
+                  <li class="dropdown__item"><a class="link dropdown__link" href="">Balla</a></li>
                 </ul>
               </div>
             </li>
           </ul>
 
           <form class="search header__search" action="https://postman-echo.com/post" target="_blank" method="post">
-            <input class="search__input" type="search" name="search" id="search-bot" placeholder="Поиск по сайту">
-            <button class="btn search__btn" type="submit" aria-label="Поиск"></button>
+            <input class="search__input" type="search" name="search" id="search-bot" placeholder="Search at this site">
+            <button class="btn search__btn" type="submit" aria-label="Search"></button>
           </form>
         </div>
       </div>
@@ -182,10 +184,9 @@
     <section class="hero">
       <div class="container hero__container">
         <div class="hero__content">
-          <h2 class="heading hero__heading">Прикоснитесь к&nbsp;прекрасному</h2>
-          <p class="text hero__descr">Мы вынуждены отталкиваться от&nbsp;того, что реализация намеченных плановых
-            заданий создаёт предпосылки для&nbsp;новых предложений.</p>
-          <a class="btn hero__btn" href="#contacts">Подписаться на&nbsp;рассылку</a>
+          <h2 class="heading hero__heading">Touch&nbsp;beautiful</h2>
+          <p class="text hero__descr">We&nbsp;are forced to&nbsp;start from the fact that the implementation of&nbsp;the planned targets creates the preconditions for new proposals.</p>
+          <a class="btn hero__btn" href="#contacts">Subscribe to&nbsp;newsletter</a>
         </div>
       </div>
       <div class="hero__swiper swiper" aria-hidden="true">
@@ -206,16 +207,8 @@
     <section class="about" id="about">
       <div class="container about__container">
         <div class="about__content">
-          <h2 class="heading about__heading">О&nbsp;нас</h2>
-          <p class="text about__descr">Ясность нашей позиции очевидна: семантический разбор внешних противодействий
-            однозначно определяет каждого участника как&nbsp;способного принимать собственные решения касаемо
-            распределения внутренних резервов и&nbsp;ресурсов. Не&nbsp;следует, однако, забывать,
-            что&nbsp;высококачественный прототип будущего проекта влечет за&nbsp;собой процесс внедрения
-            и&nbsp;модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных
-            исследований создаёт необходимость включения в&nbsp;производственный план целого ряда внеочередных
-            мероприятий с&nbsp;учётом комплекса распределения внутренних резервов и&nbsp;ресурсов. В&nbsp;рамках
-            спецификации современных стандартов, действия представителей оппозиции набирают популярность среди
-            определенных слоев населения, а&nbsp;значит, должны быть разоблачены.</p>
+          <h2 class="heading about__heading">About</h2>
+          <p class="text about__descr">The clarity of&nbsp;our position is&nbsp;obvious: the semantic analysis of&nbsp;external counteractions uniquely defines each participant as&nbsp;capable of&nbsp;making their own decisions regarding the distribution of&nbsp;internal reserves and resources. However, one should not forget that a&nbsp;high-quality prototype of&nbsp;a&nbsp;future project entails the process of&nbsp;implementing and modernizing the development model. Everyday practice shows that the high quality of&nbsp;positional research creates the need to&nbsp;include a&nbsp;number of&nbsp;extraordinary events in&nbsp;the production plan, taking into account the complex distribution of&nbsp;internal reserves and resources. Within the specification of&nbsp;modern standards, the actions of&nbsp;opposition representatives are gaining popularity among certain segments of&nbsp;the population, which means they must be&nbsp;exposed.</p>
         </div>
       </div>
     </section>
@@ -223,19 +216,19 @@
     <section class="gallery" id="gallery">
       <div class="container gallery__container">
         <div class="gallery__content">
-          <h2 class="heading gallery__heading">Галерея</h2>
+          <h2 class="heading gallery__heading">Gallery</h2>
           <label class="gallery__filter">
-            <span class="gallery__filter-text">Фильтр</span>
+            <span class="gallery__filter-text">Filter</span>
             <select class="gallery__select" name="gallery__select" id="gallery__select">
-              <option value="all">Все</option>
-              <option value="1">Живопись</option>
-              <option value="2">Рисунок</option>
-              <option value="3">Скульптура</option>
+              <option value="all">All</option>
+              <option value="1">Painting</option>
+              <option value="2">Sketch</option>
+              <option value="3">Sculpture</option>
             </select>
           </label>
-          <p class="text gallery__text">Вам предоставляется 10&nbsp;бесплатных скачиваний. Для увеличения количества скачиваний
-            <a class="gallery__link" href="#" rel="noopener noreferrer">авторизуйтесь</a>
-            , либо воспользуйтесь лицензией.
+          <p class="text gallery__text">You are provided with 10&nbsp;free downloads. To increase downloads
+            <a class="gallery__link" href="#" rel="noopener noreferrer">log in</a>
+            , or use the license.
           </p>
           <div class="gallery__swiper-container">
             <div class="swiper gallery__swiper">
@@ -255,7 +248,7 @@
                     <source media="(min-width: 441px)" srcset="./img/gallery/768/1.webp" type="image/webp">
                     <source media="(min-width: 441px)" srcset="./img/gallery/768/1.jpg">
                     <source srcset="./img/gallery/320/1.webp" type="image/webp">
-                    <img class="gallery__image" src="./img/gallery/320/1.jpg" loading="lazy" alt="Картина 1">
+                    <img class="gallery__image" src="./img/gallery/320/1.jpg" loading="lazy" alt="Picture 1">
                   </picture>
                 </button>
                 <button class="swiper-slide gallery__slide" data-set="2" data-filter="1">
@@ -267,7 +260,7 @@
                     <source media="(min-width: 441px)" srcset="./img/gallery/768/2.webp" type="image/webp">
                     <source media="(min-width: 441px)" srcset="./img/gallery/768/2.jpg">
                     <source srcset="./img/gallery/320/2.webp" type="image/webp">
-                    <img class="gallery__image" src="./img/gallery/320/2.jpg" loading="lazy" alt="Картина 2">
+                    <img class="gallery__image" src="./img/gallery/320/2.jpg" loading="lazy" alt="Picture 2">
                   </picture>
                 </button>
                 <button class="swiper-slide gallery__slide" data-set="3" data-filter="1">
@@ -279,7 +272,7 @@
                     <source media="(min-width: 441px)" srcset="./img/gallery/768/3.webp" type="image/webp">
                     <source media="(min-width: 441px)" srcset="./img/gallery/768/3.jpg">
                     <source srcset="./img/gallery/320/3.webp" type="image/webp">
-                    <img class="gallery__image" src="./img/gallery/320/3.jpg" loading="lazy" alt="Картина 3">
+                    <img class="gallery__image" src="./img/gallery/320/3.jpg" loading="lazy" alt="Picture 3">
                   </picture>
                 </button>
                 <button class="swiper-slide gallery__slide" data-set="4" data-filter="1">
@@ -291,7 +284,7 @@
                     <source media="(min-width: 441px)" srcset="./img/gallery/768/4.webp" type="image/webp">
                     <source media="(min-width: 441px)" srcset="./img/gallery/768/4.jpg">
                     <source srcset="./img/gallery/320/4.webp" type="image/webp">
-                    <img class="gallery__image" src="./img/gallery/320/4.jpg" loading="lazy" alt="Картина 4">
+                    <img class="gallery__image" src="./img/gallery/320/4.jpg" loading="lazy" alt="Picture 4">
                   </picture>
                 </button>
                 <button class="swiper-slide gallery__slide" data-set="5" data-filter="1">
@@ -303,7 +296,7 @@
                     <source media="(min-width: 441px)" srcset="./img/gallery/768/5.webp" type="image/webp">
                     <source media="(min-width: 441px)" srcset="./img/gallery/768/5.jpg">
                     <source srcset="./img/gallery/320/5.webp" type="image/webp">
-                    <img class="gallery__image" src="./img/gallery/320/5.jpg" loading="lazy" alt="Картина 5">
+                    <img class="gallery__image" src="./img/gallery/320/5.jpg" loading="lazy" alt="Picture 5">
                   </picture>
                 </button>
                 <button class="swiper-slide gallery__slide" data-set="6" data-filter="1">
@@ -315,7 +308,7 @@
                     <source media="(min-width: 441px)" srcset="./img/gallery/768/6.webp" type="image/webp">
                     <source media="(min-width: 441px)" srcset="./img/gallery/768/6.jpg">
                     <source srcset="./img/gallery/320/6.webp" type="image/webp">
-                    <img class="gallery__image" src="./img/gallery/320/6.jpg" loading="lazy" alt="Картина 6">
+                    <img class="gallery__image" src="./img/gallery/320/6.jpg" loading="lazy" alt="Picture 6">
                   </picture>
                 </button>
                 <button class="swiper-slide gallery__slide" data-set="7" data-filter="1">
@@ -327,7 +320,7 @@
                     <source media="(min-width: 441px)" srcset="./img/gallery/768/7.webp" type="image/webp">
                     <source media="(min-width: 441px)" srcset="./img/gallery/768/7.jpg">
                     <source srcset="./img/gallery/320/7.webp" type="image/webp">
-                    <img class="gallery__image" src="./img/gallery/320/7.jpg" loading="lazy" alt="Картина 7">
+                    <img class="gallery__image" src="./img/gallery/320/7.jpg" loading="lazy" alt="Picture 7">
                   </picture>
                 </button>
                 <button class="swiper-slide gallery__slide" data-set="8" data-filter="1">
@@ -339,7 +332,7 @@
                     <source media="(min-width: 441px)" srcset="./img/gallery/768/8.webp" type="image/webp">
                     <source media="(min-width: 441px)" srcset="./img/gallery/768/8.jpg">
                     <source srcset="./img/gallery/320/8.webp" type="image/webp">
-                    <img class="gallery__image" src="./img/gallery/320/8.jpg" loading="lazy" alt="Картина 8">
+                    <img class="gallery__image" src="./img/gallery/320/8.jpg" loading="lazy" alt="Picture 8">
                   </picture>
                 </button>
                 <button class="swiper-slide gallery__slide" data-set="9" data-filter="1">
@@ -351,7 +344,7 @@
                     <source media="(min-width: 441px)" srcset="./img/gallery/768/9.webp" type="image/webp">
                     <source media="(min-width: 441px)" srcset="./img/gallery/768/9.jpg">
                     <source srcset="./img/gallery/320/9.webp" type="image/webp">
-                    <img class="gallery__image" src="./img/gallery/320/9.jpg" loading="lazy" alt="Картина 9">
+                    <img class="gallery__image" src="./img/gallery/320/9.jpg" loading="lazy" alt="Picture 9">
                   </picture>
                 </button>
                 <button class="swiper-slide gallery__slide" data-set="10" data-filter="1">
@@ -363,7 +356,7 @@
                     <source media="(min-width: 441px)" srcset="./img/gallery/768/10.webp" type="image/webp">
                     <source media="(min-width: 441px)" srcset="./img/gallery/768/10.jpg">
                     <source srcset="./img/gallery/320/10.webp" type="image/webp">
-                    <img class="gallery__image" src="./img/gallery/320/10.jpg" loading="lazy" alt="Картина 10">
+                    <img class="gallery__image" src="./img/gallery/320/10.jpg" loading="lazy" alt="Picture 10">
                   </picture>
                 </button>
                 <button class="swiper-slide gallery__slide" data-set="11" data-filter="1">
@@ -375,7 +368,7 @@
                     <source media="(min-width: 441px)" srcset="./img/gallery/768/11.webp" type="image/webp">
                     <source media="(min-width: 441px)" srcset="./img/gallery/768/11.jpg">
                     <source srcset="./img/gallery/320/11.webp" type="image/webp">
-                    <img class="gallery__image" src="./img/gallery/320/11.jpg" loading="lazy" alt="Картина 11">
+                    <img class="gallery__image" src="./img/gallery/320/11.jpg" loading="lazy" alt="Picture 11">
                   </picture>
                 </button>
                 <button class="swiper-slide gallery__slide" data-set="12" data-filter="1">
@@ -387,7 +380,7 @@
                     <source media="(min-width: 441px)" srcset="./img/gallery/768/12.webp" type="image/webp">
                     <source media="(min-width: 441px)" srcset="./img/gallery/768/12.jpg">
                     <source srcset="./img/gallery/320/12.webp" type="image/webp">
-                    <img class="gallery__image" src="./img/gallery/320/12.jpg" loading="lazy" alt="Картина 12">
+                    <img class="gallery__image" src="./img/gallery/320/12.jpg" loading="lazy" alt="Picture 12">
                   </picture>
                 </button>
                 <button class="swiper-slide gallery__slide" data-set="13" data-filter="2">
@@ -399,7 +392,7 @@
                     <source media="(min-width: 441px)" srcset="./img/gallery/768/13.webp" type="image/webp">
                     <source media="(min-width: 441px)" srcset="./img/gallery/768/13.jpg">
                     <source srcset="./img/gallery/320/13.webp" type="image/webp">
-                    <img class="gallery__image" src="./img/gallery/320/13.jpg" loading="lazy" alt="Картина 13">
+                    <img class="gallery__image" src="./img/gallery/320/13.jpg" loading="lazy" alt="Picture 13">
                   </picture>
                 </button>
                 <button class="swiper-slide gallery__slide" data-set="14" data-filter="2">
@@ -411,7 +404,7 @@
                     <source media="(min-width: 441px)" srcset="./img/gallery/768/14.webp" type="image/webp">
                     <source media="(min-width: 441px)" srcset="./img/gallery/768/14.jpg">
                     <source srcset="./img/gallery/320/14.webp" type="image/webp">
-                    <img class="gallery__image" src="./img/gallery/320/14.jpg" loading="lazy" alt="Картина 14">
+                    <img class="gallery__image" src="./img/gallery/320/14.jpg" loading="lazy" alt="Picture 14">
                   </picture>
                 </button>
                 <button class="swiper-slide gallery__slide" data-set="15" data-filter="2">
@@ -423,7 +416,7 @@
                     <source media="(min-width: 441px)" srcset="./img/gallery/768/15.webp" type="image/webp">
                     <source media="(min-width: 441px)" srcset="./img/gallery/768/15.jpg">
                     <source srcset="./img/gallery/320/15.webp" type="image/webp">
-                    <img class="gallery__image" src="./img/gallery/320/15.jpg" loading="lazy" alt="Картина 15">
+                    <img class="gallery__image" src="./img/gallery/320/15.jpg" loading="lazy" alt="Picture 15">
                   </picture>
                 </button>
                 <button class="swiper-slide gallery__slide" data-set="16" data-filter="2">
@@ -435,7 +428,7 @@
                     <source media="(min-width: 441px)" srcset="./img/gallery/768/16.webp" type="image/webp">
                     <source media="(min-width: 441px)" srcset="./img/gallery/768/16.jpg">
                     <source srcset="./img/gallery/320/16.webp" type="image/webp">
-                    <img class="gallery__image" src="./img/gallery/320/16.jpg" loading="lazy" alt="Картина 16">
+                    <img class="gallery__image" src="./img/gallery/320/16.jpg" loading="lazy" alt="Picture 16">
                   </picture>
                 </button>
                 <button class="swiper-slide gallery__slide" data-set="17" data-filter="2">
@@ -447,7 +440,7 @@
                     <source media="(min-width: 441px)" srcset="./img/gallery/768/17.webp" type="image/webp">
                     <source media="(min-width: 441px)" srcset="./img/gallery/768/17.jpg">
                     <source srcset="./img/gallery/320/17.webp" type="image/webp">
-                    <img class="gallery__image" src="./img/gallery/320/17.jpg" loading="lazy" alt="Картина 17">
+                    <img class="gallery__image" src="./img/gallery/320/17.jpg" loading="lazy" alt="Picture 17">
                   </picture>
                 </button>
                 <button class="swiper-slide gallery__slide" data-set="18" data-filter="2">
@@ -459,7 +452,7 @@
                     <source media="(min-width: 441px)" srcset="./img/gallery/768/18.webp" type="image/webp">
                     <source media="(min-width: 441px)" srcset="./img/gallery/768/18.jpg">
                     <source srcset="./img/gallery/320/18.webp" type="image/webp">
-                    <img class="gallery__image" src="./img/gallery/320/18.jpg" loading="lazy" alt="Картина 18">
+                    <img class="gallery__image" src="./img/gallery/320/18.jpg" loading="lazy" alt="Picture 18">
                   </picture>
                 </button>
                 <button class="swiper-slide gallery__slide" data-set="19" data-filter="3">
@@ -471,7 +464,7 @@
                     <source media="(min-width: 441px)" srcset="./img/gallery/768/19.webp" type="image/webp">
                     <source media="(min-width: 441px)" srcset="./img/gallery/768/19.jpg">
                     <source srcset="./img/gallery/320/19.webp" type="image/webp">
-                    <img class="gallery__image" src="./img/gallery/320/19.jpg" loading="lazy" alt="Картина 19">
+                    <img class="gallery__image" src="./img/gallery/320/19.jpg" loading="lazy" alt="Picture 19">
                   </picture>
                 </button>
                 <button class="swiper-slide gallery__slide" data-set="20" data-filter="3">
@@ -483,7 +476,7 @@
                     <source media="(min-width: 441px)" srcset="./img/gallery/768/20.webp" type="image/webp">
                     <source media="(min-width: 441px)" srcset="./img/gallery/768/20.jpg">
                     <source srcset="./img/gallery/320/20.webp" type="image/webp">
-                    <img class="gallery__image" src="./img/gallery/320/20.jpg" loading="lazy" alt="Картина 20">
+                    <img class="gallery__image" src="./img/gallery/320/20.jpg" loading="lazy" alt="Picture 20">
                   </picture>
                 </button>
                 <button class="swiper-slide gallery__slide" data-set="21" data-filter="3">
@@ -495,7 +488,7 @@
                     <source media="(min-width: 441px)" srcset="./img/gallery/768/21.webp" type="image/webp">
                     <source media="(min-width: 441px)" srcset="./img/gallery/768/21.jpg">
                     <source srcset="./img/gallery/320/21.webp" type="image/webp">
-                    <img class="gallery__image" src="./img/gallery/320/21.jpg" loading="lazy" alt="Картина 21">
+                    <img class="gallery__image" src="./img/gallery/320/21.jpg" loading="lazy" alt="Picture 21">
                   </picture>
                 </button>
                 <button class="swiper-slide gallery__slide" data-set="22" data-filter="3">
@@ -507,7 +500,7 @@
                     <source media="(min-width: 441px)" srcset="./img/gallery/768/22.webp" type="image/webp">
                     <source media="(min-width: 441px)" srcset="./img/gallery/768/22.jpg">
                     <source srcset="./img/gallery/320/22.webp" type="image/webp">
-                    <img class="gallery__image" src="./img/gallery/320/22.jpg" loading="lazy" alt="Картина 22">
+                    <img class="gallery__image" src="./img/gallery/320/22.jpg" loading="lazy" alt="Picture 22">
                   </picture>
                 </button>
                 <button class="swiper-slide gallery__slide" data-set="23" data-filter="3">
@@ -519,7 +512,7 @@
                     <source media="(min-width: 441px)" srcset="./img/gallery/768/23.webp" type="image/webp">
                     <source media="(min-width: 441px)" srcset="./img/gallery/768/23.jpg">
                     <source srcset="./img/gallery/320/23.webp" type="image/webp">
-                    <img class="gallery__image" src="./img/gallery/320/23.jpg" loading="lazy" alt="Картина 23">
+                    <img class="gallery__image" src="./img/gallery/320/23.jpg" loading="lazy" alt="Picture 23">
                   </picture>
                 </button>
                 <button class="swiper-slide gallery__slide" data-set="24" data-filter="3">
@@ -531,249 +524,249 @@
                     <source media="(min-width: 441px)" srcset="./img/gallery/768/24.webp" type="image/webp">
                     <source media="(min-width: 441px)" srcset="./img/gallery/768/24.jpg">
                     <source srcset="./img/gallery/320/24.webp" type="image/webp">
-                    <img class="gallery__image" src="./img/gallery/320/24.jpg" loading="lazy" alt="Картина 24">
+                    <img class="gallery__image" src="./img/gallery/320/24.jpg" loading="lazy" alt="Picture 24">
                   </picture>
                 </button>
               </div>
             </div>
             <div class="modal gallery__modal">
               <div class="modal__window window" data-target="1">
-                <img class="window__image" src="./img/gallery/320/1.jpg" loading="lazy" alt="Картина 1">
+                <img class="window__image" src="./img/gallery/320/1.jpg" loading="lazy" alt="Picture 1">
                 <div class="window__content">
-                  <span class="window__title">Казимир Малевич</span>
-                  <span class="window__caption">&laquo;Женщина с&nbsp;граблями&raquo;</span>
+                  <span class="window__title">Kazimir Malevich</span>
+                  <span class="window__caption">"Woman with&nbsp;rake"</span>
                   <span class="window__date">1931-1932</span>
-                  <p class="text window__descr">Картина из&nbsp;второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за&nbsp;её&nbsp;создание в&nbsp;1930-1931&nbsp;годах, после того, как первый цикл был утерян после Берлинской и&nbsp;Варшавской выставок в&nbsp;1927&nbsp;году.</p>
+                  <p class="text window__descr">Picture from the second series of&nbsp;the peasant cycle of&nbsp;works by&nbsp;Kazimir Malevich. The artist began to&nbsp;create it&nbsp;in&nbsp;1930-1931, after the first cycle was lost after the Berlin and Warsaw exhibitions in&nbsp;1927.</p>
                 </div>
                 <button class="window__close"></button>
               </div>
               <div class="modal__window window" data-target="2">
-                <img class="window__image" src="./img/gallery/320/2.jpg" loading="lazy" alt="Картина 2">
+                <img class="window__image" src="./img/gallery/320/2.jpg" loading="lazy" alt="Picture 2">
                 <div class="window__content">
-                  <span class="window__title">Казимир Малевич</span>
-                  <span class="window__caption">&laquo;Женщина с&nbsp;граблями&raquo;</span>
+                  <span class="window__title">Kazimir Malevich</span>
+                  <span class="window__caption">"Woman with&nbsp;rake"</span>
                   <span class="window__date">1931-1932</span>
-                  <p class="text window__descr">Картина из&nbsp;второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за&nbsp;её&nbsp;создание в&nbsp;1930-1931&nbsp;годах, после того, как первый цикл был утерян после Берлинской и&nbsp;Варшавской выставок в&nbsp;1927&nbsp;году.</p>
+                  <p class="text window__descr">Picture from the second series of&nbsp;the peasant cycle of&nbsp;works by&nbsp;Kazimir Malevich. The artist began to&nbsp;create it&nbsp;in&nbsp;1930-1931, after the first cycle was lost after the Berlin and Warsaw exhibitions in&nbsp;1927.</p>
                 </div>
                 <button class="window__close"></button>
               </div>
               <div class="modal__window window" data-target="3">
-                <img class="window__image" src="./img/gallery/320/3.jpg" loading="lazy" alt="Картина 3">
+                <img class="window__image" src="./img/gallery/320/3.jpg" loading="lazy" alt="Picture 3">
                 <div class="window__content">
-                  <span class="window__title">Казимир Малевич</span>
-                  <span class="window__caption">&laquo;Женщина с&nbsp;граблями&raquo;</span>
+                  <span class="window__title">Kazimir Malevich</span>
+                  <span class="window__caption">"Woman with&nbsp;rake"</span>
                   <span class="window__date">1931-1932</span>
-                  <p class="text window__descr">Картина из&nbsp;второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за&nbsp;её&nbsp;создание в&nbsp;1930-1931&nbsp;годах, после того, как первый цикл был утерян после Берлинской и&nbsp;Варшавской выставок в&nbsp;1927&nbsp;году.</p>
+                  <p class="text window__descr">Picture from the second series of&nbsp;the peasant cycle of&nbsp;works by&nbsp;Kazimir Malevich. The artist began to&nbsp;create it&nbsp;in&nbsp;1930-1931, after the first cycle was lost after the Berlin and Warsaw exhibitions in&nbsp;1927.</p>
                 </div>
                 <button class="window__close"></button>
               </div>
               <div class="modal__window window" data-target="4">
-                <img class="window__image" src="./img/gallery/320/4.jpg" loading="lazy" alt="Картина 4">
+                <img class="window__image" src="./img/gallery/320/4.jpg" loading="lazy" alt="Picture 4">
                 <div class="window__content">
-                  <span class="window__title">Казимир Малевич</span>
-                  <span class="window__caption">&laquo;Женщина с&nbsp;граблями&raquo;</span>
+                  <span class="window__title">Kazimir Malevich</span>
+                  <span class="window__caption">"Woman with&nbsp;rake"</span>
                   <span class="window__date">1931-1932</span>
-                  <p class="text window__descr">Картина из&nbsp;второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за&nbsp;её&nbsp;создание в&nbsp;1930-1931&nbsp;годах, после того, как первый цикл был утерян после Берлинской и&nbsp;Варшавской выставок в&nbsp;1927&nbsp;году.</p>
+                  <p class="text window__descr">Picture from the second series of&nbsp;the peasant cycle of&nbsp;works by&nbsp;Kazimir Malevich. The artist began to&nbsp;create it&nbsp;in&nbsp;1930-1931, after the first cycle was lost after the Berlin and Warsaw exhibitions in&nbsp;1927.</p>
                 </div>
                 <button class="window__close"></button>
               </div>
               <div class="modal__window window" data-target="5">
-                <img class="window__image" src="./img/gallery/320/5.jpg" loading="lazy" alt="Картина 5">
+                <img class="window__image" src="./img/gallery/320/5.jpg" loading="lazy" alt="Picture 5">
                 <div class="window__content">
-                  <span class="window__title">Казимир Малевич</span>
-                  <span class="window__caption">&laquo;Женщина с&nbsp;граблями&raquo;</span>
+                  <span class="window__title">Kazimir Malevich</span>
+                  <span class="window__caption">"Woman with&nbsp;rake"</span>
                   <span class="window__date">1931-1932</span>
-                  <p class="text window__descr">Картина из&nbsp;второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за&nbsp;её&nbsp;создание в&nbsp;1930-1931&nbsp;годах, после того, как первый цикл был утерян после Берлинской и&nbsp;Варшавской выставок в&nbsp;1927&nbsp;году.</p>
+                  <p class="text window__descr">Picture from the second series of&nbsp;the peasant cycle of&nbsp;works by&nbsp;Kazimir Malevich. The artist began to&nbsp;create it&nbsp;in&nbsp;1930-1931, after the first cycle was lost after the Berlin and Warsaw exhibitions in&nbsp;1927.</p>
                 </div>
                 <button class="window__close"></button>
               </div>
               <div class="modal__window window" data-target="6">
-                <img class="window__image" src="./img/gallery/320/6.jpg" loading="lazy" alt="Картина 6">
+                <img class="window__image" src="./img/gallery/320/6.jpg" loading="lazy" alt="Picture 6">
                 <div class="window__content">
-                  <span class="window__title">Казимир Малевич</span>
-                  <span class="window__caption">&laquo;Женщина с&nbsp;граблями&raquo;</span>
+                  <span class="window__title">Kazimir Malevich</span>
+                  <span class="window__caption">"Woman with&nbsp;rake"</span>
                   <span class="window__date">1931-1932</span>
-                  <p class="text window__descr">Картина из&nbsp;второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за&nbsp;её&nbsp;создание в&nbsp;1930-1931&nbsp;годах, после того, как первый цикл был утерян после Берлинской и&nbsp;Варшавской выставок в&nbsp;1927&nbsp;году.</p>
+                  <p class="text window__descr">Picture from the second series of&nbsp;the peasant cycle of&nbsp;works by&nbsp;Kazimir Malevich. The artist began to&nbsp;create it&nbsp;in&nbsp;1930-1931, after the first cycle was lost after the Berlin and Warsaw exhibitions in&nbsp;1927.</p>
                 </div>
                 <button class="window__close"></button>
               </div>
               <div class="modal__window window" data-target="7">
-                <img class="window__image" src="./img/gallery/320/7.jpg" loading="lazy" alt="Картина 7">
+                <img class="window__image" src="./img/gallery/320/7.jpg" loading="lazy" alt="Picture 7">
                 <div class="window__content">
-                  <span class="window__title">Казимир Малевич</span>
-                  <span class="window__caption">&laquo;Женщина с&nbsp;граблями&raquo;</span>
+                  <span class="window__title">Kazimir Malevich</span>
+                  <span class="window__caption">"Woman with&nbsp;rake"</span>
                   <span class="window__date">1931-1932</span>
-                  <p class="text window__descr">Картина из&nbsp;второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за&nbsp;её&nbsp;создание в&nbsp;1930-1931&nbsp;годах, после того, как первый цикл был утерян после Берлинской и&nbsp;Варшавской выставок в&nbsp;1927&nbsp;году.</p>
+                  <p class="text window__descr">Picture from the second series of&nbsp;the peasant cycle of&nbsp;works by&nbsp;Kazimir Malevich. The artist began to&nbsp;create it&nbsp;in&nbsp;1930-1931, after the first cycle was lost after the Berlin and Warsaw exhibitions in&nbsp;1927.</p>
                 </div>
                 <button class="window__close"></button>
               </div>
               <div class="modal__window window" data-target="8">
-                <img class="window__image" src="./img/gallery/320/8.jpg" loading="lazy" alt="Картина 8">
+                <img class="window__image" src="./img/gallery/320/8.jpg" loading="lazy" alt="Picture 8">
                 <div class="window__content">
-                  <span class="window__title">Казимир Малевич</span>
-                  <span class="window__caption">&laquo;Женщина с&nbsp;граблями&raquo;</span>
+                  <span class="window__title">Kazimir Malevich</span>
+                  <span class="window__caption">"Woman with&nbsp;rake"</span>
                   <span class="window__date">1931-1932</span>
-                  <p class="text window__descr">Картина из&nbsp;второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за&nbsp;её&nbsp;создание в&nbsp;1930-1931&nbsp;годах, после того, как первый цикл был утерян после Берлинской и&nbsp;Варшавской выставок в&nbsp;1927&nbsp;году.</p>
+                  <p class="text window__descr">Picture from the second series of&nbsp;the peasant cycle of&nbsp;works by&nbsp;Kazimir Malevich. The artist began to&nbsp;create it&nbsp;in&nbsp;1930-1931, after the first cycle was lost after the Berlin and Warsaw exhibitions in&nbsp;1927.</p>
                 </div>
                 <button class="window__close"></button>
               </div>
               <div class="modal__window window" data-target="9">
-                <img class="window__image" src="./img/gallery/320/9.jpg" loading="lazy" alt="Картина 9">
+                <img class="window__image" src="./img/gallery/320/9.jpg" loading="lazy" alt="Picture 9">
                 <div class="window__content">
-                  <span class="window__title">Казимир Малевич</span>
-                  <span class="window__caption">&laquo;Женщина с&nbsp;граблями&raquo;</span>
+                  <span class="window__title">Kazimir Malevich</span>
+                  <span class="window__caption">"Woman with&nbsp;rake"</span>
                   <span class="window__date">1931-1932</span>
-                  <p class="text window__descr">Картина из&nbsp;второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за&nbsp;её&nbsp;создание в&nbsp;1930-1931&nbsp;годах, после того, как первый цикл был утерян после Берлинской и&nbsp;Варшавской выставок в&nbsp;1927&nbsp;году.</p>
+                  <p class="text window__descr">Picture from the second series of&nbsp;the peasant cycle of&nbsp;works by&nbsp;Kazimir Malevich. The artist began to&nbsp;create it&nbsp;in&nbsp;1930-1931, after the first cycle was lost after the Berlin and Warsaw exhibitions in&nbsp;1927.</p>
                 </div>
                 <button class="window__close"></button>
               </div>
               <div class="modal__window window" data-target="10">
-                <img class="window__image" src="./img/gallery/320/10.jpg" loading="lazy" alt="Картина 10">
+                <img class="window__image" src="./img/gallery/320/10.jpg" loading="lazy" alt="Picture 10">
                 <div class="window__content">
-                  <span class="window__title">Казимир Малевич</span>
-                  <span class="window__caption">&laquo;Женщина с&nbsp;граблями&raquo;</span>
+                  <span class="window__title">Kazimir Malevich</span>
+                  <span class="window__caption">"Woman with&nbsp;rake"</span>
                   <span class="window__date">1931-1932</span>
-                  <p class="text window__descr">Картина из&nbsp;второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за&nbsp;её&nbsp;создание в&nbsp;1930-1931&nbsp;годах, после того, как первый цикл был утерян после Берлинской и&nbsp;Варшавской выставок в&nbsp;1927&nbsp;году.</p>
+                  <p class="text window__descr">Picture from the second series of&nbsp;the peasant cycle of&nbsp;works by&nbsp;Kazimir Malevich. The artist began to&nbsp;create it&nbsp;in&nbsp;1930-1931, after the first cycle was lost after the Berlin and Warsaw exhibitions in&nbsp;1927.</p>
                 </div>
                 <button class="window__close"></button>
               </div>
               <div class="modal__window window" data-target="11">
-                <img class="window__image" src="./img/gallery/320/11.jpg" loading="lazy" alt="Картина 11">
+                <img class="window__image" src="./img/gallery/320/11.jpg" loading="lazy" alt="Picture 11">
                 <div class="window__content">
-                  <span class="window__title">Казимир Малевич</span>
-                  <span class="window__caption">&laquo;Женщина с&nbsp;граблями&raquo;</span>
+                  <span class="window__title">Kazimir Malevich</span>
+                  <span class="window__caption">"Woman with&nbsp;rake"</span>
                   <span class="window__date">1931-1932</span>
-                  <p class="text window__descr">Картина из&nbsp;второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за&nbsp;её&nbsp;создание в&nbsp;1930-1931&nbsp;годах, после того, как первый цикл был утерян после Берлинской и&nbsp;Варшавской выставок в&nbsp;1927&nbsp;году.</p>
+                  <p class="text window__descr">Picture from the second series of&nbsp;the peasant cycle of&nbsp;works by&nbsp;Kazimir Malevich. The artist began to&nbsp;create it&nbsp;in&nbsp;1930-1931, after the first cycle was lost after the Berlin and Warsaw exhibitions in&nbsp;1927.</p>
                 </div>
                 <button class="window__close"></button>
               </div>
               <div class="modal__window window" data-target="12">
-                <img class="window__image" src="./img/gallery/320/12.jpg" loading="lazy" alt="Картина 12">
+                <img class="window__image" src="./img/gallery/320/12.jpg" loading="lazy" alt="Picture 12">
                 <div class="window__content">
-                  <span class="window__title">Казимир Малевич</span>
-                  <span class="window__caption">&laquo;Женщина с&nbsp;граблями&raquo;</span>
+                  <span class="window__title">Kazimir Malevich</span>
+                  <span class="window__caption">"Woman with&nbsp;rake"</span>
                   <span class="window__date">1931-1932</span>
-                  <p class="text window__descr">Картина из&nbsp;второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за&nbsp;её&nbsp;создание в&nbsp;1930-1931&nbsp;годах, после того, как первый цикл был утерян после Берлинской и&nbsp;Варшавской выставок в&nbsp;1927&nbsp;году.</p>
+                  <p class="text window__descr">Picture from the second series of&nbsp;the peasant cycle of&nbsp;works by&nbsp;Kazimir Malevich. The artist began to&nbsp;create it&nbsp;in&nbsp;1930-1931, after the first cycle was lost after the Berlin and Warsaw exhibitions in&nbsp;1927.</p>
                 </div>
                 <button class="window__close"></button>
               </div>
               <div class="modal__window window" data-target="13">
-                <img class="window__image" src="./img/gallery/320/13.jpg" loading="lazy" alt="Картина 13">
+                <img class="window__image" src="./img/gallery/320/13.jpg" loading="lazy" alt="Picture 13">
                 <div class="window__content">
-                  <span class="window__title">Казимир Малевич</span>
-                  <span class="window__caption">&laquo;Женщина с&nbsp;граблями&raquo;</span>
+                  <span class="window__title">Kazimir Malevich</span>
+                  <span class="window__caption">"Woman with&nbsp;rake"</span>
                   <span class="window__date">1931-1932</span>
-                  <p class="text window__descr">Картина из&nbsp;второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за&nbsp;её&nbsp;создание в&nbsp;1930-1931&nbsp;годах, после того, как первый цикл был утерян после Берлинской и&nbsp;Варшавской выставок в&nbsp;1927&nbsp;году.</p>
+                  <p class="text window__descr">Picture from the second series of&nbsp;the peasant cycle of&nbsp;works by&nbsp;Kazimir Malevich. The artist began to&nbsp;create it&nbsp;in&nbsp;1930-1931, after the first cycle was lost after the Berlin and Warsaw exhibitions in&nbsp;1927.</p>
                 </div>
                 <button class="window__close"></button>
               </div>
               <div class="modal__window window" data-target="14">
-                <img class="window__image" src="./img/gallery/320/14.jpg" loading="lazy" alt="Картина 14">
+                <img class="window__image" src="./img/gallery/320/14.jpg" loading="lazy" alt="Picture 14">
                 <div class="window__content">
-                  <span class="window__title">Казимир Малевич</span>
-                  <span class="window__caption">&laquo;Женщина с&nbsp;граблями&raquo;</span>
+                  <span class="window__title">Kazimir Malevich</span>
+                  <span class="window__caption">"Woman with&nbsp;rake"</span>
                   <span class="window__date">1931-1932</span>
-                  <p class="text window__descr">Картина из&nbsp;второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за&nbsp;её&nbsp;создание в&nbsp;1930-1931&nbsp;годах, после того, как первый цикл был утерян после Берлинской и&nbsp;Варшавской выставок в&nbsp;1927&nbsp;году.</p>
+                  <p class="text window__descr">Picture from the second series of&nbsp;the peasant cycle of&nbsp;works by&nbsp;Kazimir Malevich. The artist began to&nbsp;create it&nbsp;in&nbsp;1930-1931, after the first cycle was lost after the Berlin and Warsaw exhibitions in&nbsp;1927.</p>
                 </div>
                 <button class="window__close"></button>
               </div>
               <div class="modal__window window" data-target="15">
-                <img class="window__image" src="./img/gallery/320/15.jpg" loading="lazy" alt="Картина 15">
+                <img class="window__image" src="./img/gallery/320/15.jpg" loading="lazy" alt="Picture 15">
                 <div class="window__content">
-                  <span class="window__title">Казимир Малевич</span>
-                  <span class="window__caption">&laquo;Женщина с&nbsp;граблями&raquo;</span>
+                  <span class="window__title">Kazimir Malevich</span>
+                  <span class="window__caption">"Woman with&nbsp;rake"</span>
                   <span class="window__date">1931-1932</span>
-                  <p class="text window__descr">Картина из&nbsp;второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за&nbsp;её&nbsp;создание в&nbsp;1930-1931&nbsp;годах, после того, как первый цикл был утерян после Берлинской и&nbsp;Варшавской выставок в&nbsp;1927&nbsp;году.</p>
+                  <p class="text window__descr">Picture from the second series of&nbsp;the peasant cycle of&nbsp;works by&nbsp;Kazimir Malevich. The artist began to&nbsp;create it&nbsp;in&nbsp;1930-1931, after the first cycle was lost after the Berlin and Warsaw exhibitions in&nbsp;1927.</p>
                 </div>
                 <button class="window__close"></button>
               </div>
               <div class="modal__window window" data-target="16">
-                <img class="window__image" src="./img/gallery/320/16.jpg" loading="lazy" alt="Картина 16">
+                <img class="window__image" src="./img/gallery/320/16.jpg" loading="lazy" alt="Picture 16">
                 <div class="window__content">
-                  <span class="window__title">Казимир Малевич</span>
-                  <span class="window__caption">&laquo;Женщина с&nbsp;граблями&raquo;</span>
+                  <span class="window__title">Kazimir Malevich</span>
+                  <span class="window__caption">"Woman with&nbsp;rake"</span>
                   <span class="window__date">1931-1932</span>
-                  <p class="text window__descr">Картина из&nbsp;второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за&nbsp;её&nbsp;создание в&nbsp;1930-1931&nbsp;годах, после того, как первый цикл был утерян после Берлинской и&nbsp;Варшавской выставок в&nbsp;1927&nbsp;году.</p>
+                  <p class="text window__descr">Picture from the second series of&nbsp;the peasant cycle of&nbsp;works by&nbsp;Kazimir Malevich. The artist began to&nbsp;create it&nbsp;in&nbsp;1930-1931, after the first cycle was lost after the Berlin and Warsaw exhibitions in&nbsp;1927.</p>
                 </div>
                 <button class="window__close"></button>
               </div>
               <div class="modal__window window" data-target="17">
-                <img class="window__image" src="./img/gallery/320/17.jpg" loading="lazy" alt="Картина 17">
+                <img class="window__image" src="./img/gallery/320/17.jpg" loading="lazy" alt="Picture 17">
                 <div class="window__content">
-                  <span class="window__title">Казимир Малевич</span>
-                  <span class="window__caption">&laquo;Женщина с&nbsp;граблями&raquo;</span>
+                  <span class="window__title">Kazimir Malevich</span>
+                  <span class="window__caption">"Woman with&nbsp;rake"</span>
                   <span class="window__date">1931-1932</span>
-                  <p class="text window__descr">Картина из&nbsp;второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за&nbsp;её&nbsp;создание в&nbsp;1930-1931&nbsp;годах, после того, как первый цикл был утерян после Берлинской и&nbsp;Варшавской выставок в&nbsp;1927&nbsp;году.</p>
+                  <p class="text window__descr">Picture from the second series of&nbsp;the peasant cycle of&nbsp;works by&nbsp;Kazimir Malevich. The artist began to&nbsp;create it&nbsp;in&nbsp;1930-1931, after the first cycle was lost after the Berlin and Warsaw exhibitions in&nbsp;1927.</p>
                 </div>
                 <button class="window__close"></button>
               </div>
               <div class="modal__window window" data-target="18">
-                <img class="window__image" src="./img/gallery/320/18.jpg" loading="lazy" alt="Картина 18">
+                <img class="window__image" src="./img/gallery/320/18.jpg" loading="lazy" alt="Picture 18">
                 <div class="window__content">
-                  <span class="window__title">Казимир Малевич</span>
-                  <span class="window__caption">&laquo;Женщина с&nbsp;граблями&raquo;</span>
+                  <span class="window__title">Kazimir Malevich</span>
+                  <span class="window__caption">"Woman with&nbsp;rake"</span>
                   <span class="window__date">1931-1932</span>
-                  <p class="text window__descr">Картина из&nbsp;второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за&nbsp;её&nbsp;создание в&nbsp;1930-1931&nbsp;годах, после того, как первый цикл был утерян после Берлинской и&nbsp;Варшавской выставок в&nbsp;1927&nbsp;году.</p>
+                  <p class="text window__descr">Picture from the second series of&nbsp;the peasant cycle of&nbsp;works by&nbsp;Kazimir Malevich. The artist began to&nbsp;create it&nbsp;in&nbsp;1930-1931, after the first cycle was lost after the Berlin and Warsaw exhibitions in&nbsp;1927.</p>
                 </div>
                 <button class="window__close"></button>
               </div>
               <div class="modal__window window" data-target="19">
-                <img class="window__image" src="./img/gallery/320/19.jpg" loading="lazy" alt="Картина 19">
+                <img class="window__image" src="./img/gallery/320/19.jpg" loading="lazy" alt="Picture 19">
                 <div class="window__content">
-                  <span class="window__title">Казимир Малевич</span>
-                  <span class="window__caption">&laquo;Женщина с&nbsp;граблями&raquo;</span>
+                  <span class="window__title">Kazimir Malevich</span>
+                  <span class="window__caption">"Woman with&nbsp;rake"</span>
                   <span class="window__date">1931-1932</span>
-                  <p class="text window__descr">Картина из&nbsp;второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за&nbsp;её&nbsp;создание в&nbsp;1930-1931&nbsp;годах, после того, как первый цикл был утерян после Берлинской и&nbsp;Варшавской выставок в&nbsp;1927&nbsp;году.</p>
+                  <p class="text window__descr">Picture from the second series of&nbsp;the peasant cycle of&nbsp;works by&nbsp;Kazimir Malevich. The artist began to&nbsp;create it&nbsp;in&nbsp;1930-1931, after the first cycle was lost after the Berlin and Warsaw exhibitions in&nbsp;1927.</p>
                 </div>
                 <button class="window__close"></button>
               </div>
               <div class="modal__window window" data-target="20">
-                <img class="window__image" src="./img/gallery/320/20.jpg" loading="lazy" alt="Картина 20">
+                <img class="window__image" src="./img/gallery/320/20.jpg" loading="lazy" alt="Picture 20">
                 <div class="window__content">
-                  <span class="window__title">Казимир Малевич</span>
-                  <span class="window__caption">&laquo;Женщина с&nbsp;граблями&raquo;</span>
+                  <span class="window__title">Kazimir Malevich</span>
+                  <span class="window__caption">"Woman with&nbsp;rake"</span>
                   <span class="window__date">1931-1932</span>
-                  <p class="text window__descr">Картина из&nbsp;второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за&nbsp;её&nbsp;создание в&nbsp;1930-1931&nbsp;годах, после того, как первый цикл был утерян после Берлинской и&nbsp;Варшавской выставок в&nbsp;1927&nbsp;году.</p>
+                  <p class="text window__descr">Picture from the second series of&nbsp;the peasant cycle of&nbsp;works by&nbsp;Kazimir Malevich. The artist began to&nbsp;create it&nbsp;in&nbsp;1930-1931, after the first cycle was lost after the Berlin and Warsaw exhibitions in&nbsp;1927.</p>
                 </div>
                 <button class="window__close"></button>
               </div>
               <div class="modal__window window" data-target="21">
-                <img class="window__image" src="./img/gallery/320/21.jpg" loading="lazy" alt="Картина 21">
+                <img class="window__image" src="./img/gallery/320/21.jpg" loading="lazy" alt="Picture 21">
                 <div class="window__content">
-                  <span class="window__title">Казимир Малевич</span>
-                  <span class="window__caption">&laquo;Женщина с&nbsp;граблями&raquo;</span>
+                  <span class="window__title">Kazimir Malevich</span>
+                  <span class="window__caption">"Woman with&nbsp;rake"</span>
                   <span class="window__date">1931-1932</span>
-                  <p class="text window__descr">Картина из&nbsp;второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за&nbsp;её&nbsp;создание в&nbsp;1930-1931&nbsp;годах, после того, как первый цикл был утерян после Берлинской и&nbsp;Варшавской выставок в&nbsp;1927&nbsp;году.</p>
+                  <p class="text window__descr">Picture from the second series of&nbsp;the peasant cycle of&nbsp;works by&nbsp;Kazimir Malevich. The artist began to&nbsp;create it&nbsp;in&nbsp;1930-1931, after the first cycle was lost after the Berlin and Warsaw exhibitions in&nbsp;1927.</p>
                 </div>
                 <button class="window__close"></button>
               </div>
               <div class="modal__window window" data-target="22">
-                <img class="window__image" src="./img/gallery/320/22.jpg" loading="lazy" alt="Картина 22">
+                <img class="window__image" src="./img/gallery/320/22.jpg" loading="lazy" alt="Picture 22">
                 <div class="window__content">
-                  <span class="window__title">Казимир Малевич</span>
-                  <span class="window__caption">&laquo;Женщина с&nbsp;граблями&raquo;</span>
+                  <span class="window__title">Kazimir Malevich</span>
+                  <span class="window__caption">"Woman with&nbsp;rake"</span>
                   <span class="window__date">1931-1932</span>
-                  <p class="text window__descr">Картина из&nbsp;второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за&nbsp;её&nbsp;создание в&nbsp;1930-1931&nbsp;годах, после того, как первый цикл был утерян после Берлинской и&nbsp;Варшавской выставок в&nbsp;1927&nbsp;году.</p>
+                  <p class="text window__descr">Picture from the second series of&nbsp;the peasant cycle of&nbsp;works by&nbsp;Kazimir Malevich. The artist began to&nbsp;create it&nbsp;in&nbsp;1930-1931, after the first cycle was lost after the Berlin and Warsaw exhibitions in&nbsp;1927.</p>
                 </div>
                 <button class="window__close"></button>
               </div>
               <div class="modal__window window" data-target="23">
-                <img class="window__image" src="./img/gallery/320/23.jpg" loading="lazy" alt="Картина 23">
+                <img class="window__image" src="./img/gallery/320/23.jpg" loading="lazy" alt="Picture 23">
                 <div class="window__content">
-                  <span class="window__title">Казимир Малевич</span>
-                  <span class="window__caption">&laquo;Женщина с&nbsp;граблями&raquo;</span>
+                  <span class="window__title">Kazimir Malevich</span>
+                  <span class="window__caption">"Woman with&nbsp;rake"</span>
                   <span class="window__date">1931-1932</span>
-                  <p class="text window__descr">Картина из&nbsp;второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за&nbsp;её&nbsp;создание в&nbsp;1930-1931&nbsp;годах, после того, как первый цикл был утерян после Берлинской и&nbsp;Варшавской выставок в&nbsp;1927&nbsp;году.</p>
+                  <p class="text window__descr">Picture from the second series of&nbsp;the peasant cycle of&nbsp;works by&nbsp;Kazimir Malevich. The artist began to&nbsp;create it&nbsp;in&nbsp;1930-1931, after the first cycle was lost after the Berlin and Warsaw exhibitions in&nbsp;1927.</p>
                 </div>
                 <button class="window__close"></button>
               </div>
               <div class="modal__window window" data-target="24">
-                <img class="window__image" src="./img/gallery/320/24.jpg" loading="lazy" alt="Картина 24">
+                <img class="window__image" src="./img/gallery/320/24.jpg" loading="lazy" alt="Picture 24">
                 <div class="window__content">
-                  <span class="window__title">Казимир Малевич</span>
-                  <span class="window__caption">&laquo;Женщина с&nbsp;граблями&raquo;</span>
+                  <span class="window__title">Kazimir Malevich</span>
+                  <span class="window__caption">"Woman with&nbsp;rake"</span>
                   <span class="window__date">1931-1932</span>
-                  <p class="text window__descr">Картина из&nbsp;второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за&nbsp;её&nbsp;создание в&nbsp;1930-1931&nbsp;годах, после того, как первый цикл был утерян после Берлинской и&nbsp;Варшавской выставок в&nbsp;1927&nbsp;году.</p>
+                  <p class="text window__descr">Picture from the second series of&nbsp;the peasant cycle of&nbsp;works by&nbsp;Kazimir Malevich. The artist began to&nbsp;create it&nbsp;in&nbsp;1930-1931, after the first cycle was lost after the Berlin and Warsaw exhibitions in&nbsp;1927.</p>
                 </div>
                 <button class="window__close"></button>
               </div>
@@ -788,130 +781,131 @@
       <div class="container catalogue__container">
         <div class="content catalogue__content">
           <div class="catalogue__heading-content">
-            <h2 class="heading catalogue__heading">Каталог</h2>
+            <h2 class="heading catalogue__heading">Catalogue</h2>
             <div class="flags-wrapper">
-              <button class="flag flag_fr" data-set="fr" data-num="0" aria-label="Франция"></button>
-              <button class="flag flag_de" data-set="de" data-num="1" aria-label="Германия"></button>
-              <button class="flag flag_it is-active" data-set="it" data-num="2" aria-label="Италия"></button>
-              <button class="flag flag_ru" data-set="ru" data-num="3" aria-label="Россия"></button>
-              <button class="flag flag_be" data-set="be" data-num="4" aria-label="Бельгия"></button>
+              <button class="flag flag_fr" data-set="fr" data-num="0" aria-label="France"></button>
+              <button class="flag flag_de" data-set="de" data-num="1" aria-label="Germany"></button>
+              <button class="flag flag_it is-active" data-set="it" data-num="2" aria-label="Italy"></button>
+              <button class="flag flag_ru" data-set="ru" data-num="3" aria-label="Russia"></button>
+              <button class="flag flag_be" data-set="be" data-num="4" aria-label="Belgium"></button>
             </div>
           </div>
+
           <div class="catalogue__tabs-container">
             <div class="tab catalogue__tab" data-target="fr">
               <p class="text catalogue__descr">
-                Французские художники. Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми я наслаждаюсь от всего сердца. Я совсем один и блаженствую в здешнем краю, словно созданном для таких, как я. Я так счастлив, мой друг, так упоен ощущением покоя, что искусство мое страдает от этого. Ни одного штриха не мог бы я сделать, а никогда не был таким большим художником, как в эти минуты.
+                French artists. My&nbsp;soul is&nbsp;illumined with unearthly joy, like these wonderful spring mornings, which&nbsp;I enjoy with all my&nbsp;heart. I&nbsp;am all alone and blissful in&nbsp;this land, as&nbsp;if&nbsp;created for people like&nbsp;me. I&nbsp;am so&nbsp;happy, my&nbsp;friend, so&nbsp;intoxicated with the feeling of&nbsp;peace that my&nbsp;art suffers from&nbsp;it. I&nbsp;could not have done a&nbsp;single stroke, and&nbsp;I have never been such a&nbsp;great artist as&nbsp;at&nbsp;these moments.
               </p>
               <div class="card tab__card" id="tab__card-fr">
                 <img class="card__pic" loading="lazy" src="./img/catalogue/catalogue-france.jpg" 
-                  alt="Бартелеми д&rsquo;Эйк">
+                  alt="Barthelemy d'Eyck">
                   <!--return loading="lazy" -->
-                <h3 class="card__title">Бартелеми д&rsquo;Эйк</h3>
-                <span class="card__date">ок.&nbsp;1420&nbsp;&mdash; после 1470.</span>
+                <h3 class="card__title">Barthelemy d'Eyck</h3>
+                <span class="card__date">approx.&nbsp;1420&nbsp;&mdash; 1470</span>
                 <p class="card__text">
-                  Имя Бартелеми д&rsquo;Эйка давно известно по&nbsp;историческим документам. Он&nbsp;был придворным художником короля Рене Доброго и&nbsp;имел высокую репутацию как выдающийся мастер, о&nbsp;чём свидетельствуют отзывы современников. Исследователи отмечали, что миниатюры, которые приписываются кисти Мастера короля Рене, на&nbsp;удивление однородны по&nbsp;своим высоким качествам, а&nbsp;стиль их&nbsp;сугубо индивидуален.
+                  The name of&nbsp;Barthelemy d'Eyck has long been known from historical documents. He&nbsp;was the court painter of&nbsp;King Ren&eacute; the Good and had a&nbsp;high reputation as&nbsp;an&nbsp;outstanding master, as&nbsp;evidenced by&nbsp;the reviews of&nbsp;his contemporaries. The researchers noted that the miniatures, which are attributed to&nbsp;the brush of&nbsp;Master King Rene, are surprisingly uniform in&nbsp;their high qualities, and their style is&nbsp;purely individual.
                 </p>
               </div>
               <ul class="ul accordion tab__accordion is-active" >
                 <li class="accordion__wrap is-active">
-                  <button class="accordion__btn"><span>C&nbsp;1400 по&nbsp;1499&nbsp;гг.</span></button>
+                  <button class="accordion__btn"><span>From&nbsp;1400 to&nbsp;1499&nbsp;</span></button>
                   <div class="panel accordion__panel">
                     <ul class="ul panel__list">
                       <li class="panel__item">
-                        <a class="panel__link" href="#tab__card-fr">Бартелеми д&rsquo;Эйк</a>
+                        <a class="panel__link" href="#tab__card-fr">Barthelemy d'Eyck</a>
                       </li>
                       <li class="panel__item">
-                        <a class="panel__link" href="#tab__card-fr">Домбе, Гийом</a>
+                        <a class="panel__link" href="#tab__card-fr">Dombe, Guillaume</a>
                       </li>
                       <li class="panel__item">
-                        <a class="panel__link" href="#tab__card-fr">Иверни, Жак</a>
+                        <a class="panel__link" href="#tab__card-fr">Yverny, Jacques</a>
                       </li>
                       <li class="panel__item">
-                        <a class="panel__link" href="#tab__card-fr">Лиферинкс, Йос</a>
+                        <a class="panel__link" href="#tab__card-fr">Lieferinx, Jos</a>
                       </li>
                       <li class="panel__item">
-                        <a class="panel__link" href="#tab__card-fr">Перреаль, Жан</a>
+                        <a class="panel__link" href="#tab__card-fr">Jean Perreal</a>
                       </li>
                       <li class="panel__item">
-                        <a class="panel__link" href="#tab__card-fr">Фроман, Никола</a>
+                        <a class="panel__link" href="#tab__card-fr">Frohman, Nikola</a>
                       </li>
                     </ul>
                   </div>
                 </li>
                 <li class="accordion__wrap">
-                  <button class="accordion__btn"><span>C&nbsp;1500 по&nbsp;1599&nbsp;гг.</span></button>
+                  <button class="accordion__btn"><span>From&nbsp;1500 to&nbsp;1599&nbsp;</span></button>
                   <div class="panel accordion__panel">
                     <div class="panel-placeholder">
                       <div class="pic-placeholder"></div>
                       <div class="text-placeholder">
-                        <p class="caption-placeholder">Здесь пока пусто</p>
-                        <p class="descr-placeholder">А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя</p>
-                        <a class="link-placeholder" href="#gallery">В&nbsp;галерею</a>
+                        <p class="caption-placeholder">Empty for now</p>
+                        <p class="descr-placeholder">In&nbsp;the&nbsp;gallery&nbsp;you can always find something interesting for yourself</p>
+                        <a class="link-placeholder" href="#gallery">To&nbsp;gallery</a>
                       </div>
                     </div>
                   </div>
                 </li>
                 <li class="accordion__wrap">
-                  <button class="accordion__btn"><span>C&nbsp;1600 по&nbsp;1699&nbsp;гг.</span></button>
+                  <button class="accordion__btn"><span>From&nbsp;1600 to&nbsp;1699&nbsp;</span></button>
                   <div class="panel accordion__panel">
                     <div class="panel-placeholder">
                       <div class="pic-placeholder"></div>
                       <div class="text-placeholder">
-                        <p class="caption-placeholder">Здесь пока пусто</p>
-                        <p class="descr-placeholder">А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя</p>
-                        <a class="link-placeholder" href="#gallery">В&nbsp;галерею</a>
+                        <p class="caption-placeholder">Empty for now</p>
+                        <p class="descr-placeholder">In&nbsp;the&nbsp;gallery&nbsp;you can always find something interesting for yourself</p>
+                        <a class="link-placeholder" href="#gallery">To&nbsp;gallery</a>
                       </div>
                     </div>
                   </div>
                 </li>
                 <li class="accordion__wrap">
-                  <button class="accordion__btn"><span>C&nbsp;1700 по&nbsp;1799&nbsp;гг.</span></button>
+                  <button class="accordion__btn"><span>From&nbsp;1700 to&nbsp;1799&nbsp;</span></button>
                   <div class="panel accordion__panel">
                     <div class="panel-placeholder">
                       <div class="pic-placeholder"></div>
                       <div class="text-placeholder">
-                        <p class="caption-placeholder">Здесь пока пусто</p>
-                        <p class="descr-placeholder">А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя</p>
-                        <a class="link-placeholder" href="#gallery">В&nbsp;галерею</a>
+                        <p class="caption-placeholder">Empty for now</p>
+                        <p class="descr-placeholder">In&nbsp;the&nbsp;gallery&nbsp;you can always find something interesting for yourself</p>
+                        <a class="link-placeholder" href="#gallery">To&nbsp;gallery</a>
                       </div>
                     </div>
                   </div>
                 </li>
                 <li class="accordion__wrap">
-                  <button class="accordion__btn"><span>C&nbsp;1800 по&nbsp;1899&nbsp;гг.</span></button>
+                  <button class="accordion__btn"><span>From&nbsp;1800 to&nbsp;1899&nbsp;</span></button>
                   <div class="panel accordion__panel">
                     <div class="panel-placeholder">
                       <div class="pic-placeholder"></div>
                       <div class="text-placeholder">
-                        <p class="caption-placeholder">Здесь пока пусто</p>
-                        <p class="descr-placeholder">А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя</p>
-                        <a class="link-placeholder" href="#gallery">В&nbsp;галерею</a>
+                        <p class="caption-placeholder">Empty for now</p>
+                        <p class="descr-placeholder">In&nbsp;the&nbsp;gallery&nbsp;you can always find something interesting for yourself</p>
+                        <a class="link-placeholder" href="#gallery">To&nbsp;gallery</a>
                       </div>
                     </div>
                   </div>
                 </li>
                 <li class="accordion__wrap">
-                  <button class="accordion__btn"><span>C&nbsp;1900 по&nbsp;1999&nbsp;гг.</span></button>
+                  <button class="accordion__btn"><span>From&nbsp;1900 to&nbsp;1999&nbsp;</span></button>
                   <div class="panel accordion__panel">
                     <div class="panel-placeholder">
                       <div class="pic-placeholder"></div>
                       <div class="text-placeholder">
-                        <p class="caption-placeholder">Здесь пока пусто</p>
-                        <p class="descr-placeholder">А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя</p>
-                        <a class="link-placeholder" href="#gallery">В&nbsp;галерею</a>
+                        <p class="caption-placeholder">Empty for now</p>
+                        <p class="descr-placeholder">In&nbsp;the&nbsp;gallery&nbsp;you can always find something interesting for yourself</p>
+                        <a class="link-placeholder" href="#gallery">To&nbsp;gallery</a>
                       </div>
                     </div>
                   </div>
                 </li>
                 <li class="accordion__wrap">
-                  <button class="accordion__btn"><span>C 2000 г.</span></button>
+                  <button class="accordion__btn"><span>From&nbsp;2000</span></button>
                   <div class="panel accordion__panel">
                     <div class="panel-placeholder">
                       <div class="pic-placeholder"></div>
                       <div class="text-placeholder">
-                        <p class="caption-placeholder">Здесь пока пусто</p>
-                        <p class="descr-placeholder">А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя</p>
-                        <a class="link-placeholder" href="#gallery">В&nbsp;галерею</a>
+                        <p class="caption-placeholder">Empty for now</p>
+                        <p class="descr-placeholder">In&nbsp;the&nbsp;gallery&nbsp;you can always find something interesting for yourself</p>
+                        <a class="link-placeholder" href="#gallery">To&nbsp;gallery</a>
                       </div>
                     </div>
                   </div>
@@ -920,118 +914,118 @@
             </div>
             <div class="tab catalogue__tab" data-target="de">
               <p class="text catalogue__descr">
-                Немецкие художники. Я так счастлив, мой друг, так упоен ощущением покоя, что искусство мое страдает от этого. Ни одного штриха не мог бы я сделать, а никогда не был таким большим художником, как в эти минуты. Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми я наслаждаюсь от всего сердца. Я совсем один и блаженствую в здешнем краю, словно созданном для таких, как я.
+                German artists. I&nbsp;am so&nbsp;happy, my&nbsp;friend, so&nbsp;intoxicated with the feeling of&nbsp;peace that my&nbsp;art suffers from&nbsp;it. I&nbsp;could not have done a&nbsp;single stroke, and&nbsp;I have never been such a&nbsp;great artist as&nbsp;at&nbsp;these moments. My&nbsp;soul is&nbsp;illumined with unearthly joy, like these wonderful spring mornings, which&nbsp;I enjoy with all my&nbsp;heart. I&nbsp;am all alone and blissful in&nbsp;this land, as&nbsp;if&nbsp;created for people like&nbsp;me.
               </p>
               <div class="card tab__card" id="tab__card-de">
                 <img class="card__pic" loading="lazy" src="./img/catalogue/catalogue-germany.jpg" 
-                  alt="Плейденвурф, Ганс">
+                  alt="Pleidenwurff, Hans">
                   <!--return loading="lazy" -->
-                <h3 class="card__title">Плейденвурф, Ганс</h3>
-                <span class="card__date">ок.&nbsp;1420&nbsp;&mdash; 9&nbsp;января 1472.</span>
+                <h3 class="card__title">Pleidenwurff, Hans</h3>
+                <span class="card__date">approx.&nbsp;1420&nbsp;&mdash; January&nbsp;9, 1472</span>
                 <p class="card__text">
-                  С&nbsp;1457&nbsp;г. Ганс Плейденвурф обосновался в&nbsp;Нюрнберге и&nbsp;ввёл новый реалистичный стиль в&nbsp;местной живописи, проникнутый влиянием голландской живописи. Предположительно Плейденвурф был учителем Михаэля Вольгемута. Его сын Вильгельм Плейденвурф вместе с&nbsp;Михаэлем Вольгемутом выполнил ксилографии для Хроники Гартмана Шеделя. Другой сын Ганса Плейденвурфа Себальд переехал в&nbsp;Айслебен, о&nbsp;его профессии ничего не&nbsp;известно.
+                  Since 1457, Hans Pleidenwurff settled in&nbsp;Nuremberg and introduced a&nbsp;new realistic style in&nbsp;local painting, imbued with the influence of&nbsp;Dutch painting. Presumably Pleidenwurf was the teacher of&nbsp;Michael Wohlgemuth. His son Wilhelm Pleidenwurff, together with Michael Wohlgemuth, made woodcuts for the Chronicle of&nbsp;Hartmann Schedel. Another son of&nbsp;Hans Pleidenwurff Sebald moved to&nbsp;Eisleben, nothing is&nbsp;known about his profession.
                 </p>
               </div>
               <ul class="ul accordion tab__accordion is-active" >
                 <li class="accordion__wrap is-active">
-                  <button class="accordion__btn"><span>C&nbsp;1400 по&nbsp;1499&nbsp;гг.</span></button>
+                  <button class="accordion__btn"><span>From&nbsp;1400 to&nbsp;1499&nbsp;</span></button>
                   <div class="panel accordion__panel">
                     <ul class="ul panel__list">
                       <li class="panel__item">
-                        <a class="panel__link" href="#tab__card-de">Бургкмайр, Ханс</a>
+                        <a class="panel__link" href="#tab__card-de">Burgkmair, Hans</a>
                       </li>
                       <li class="panel__item">
-                        <a class="panel__link" href="#tab__card-de">Вольгемут, Михаэль</a>
+                        <a class="panel__link" href="#tab__card-de">Wolgemuth, Michael</a>
                       </li>
                       <li class="panel__item">
-                        <a class="panel__link" href="#tab__card-de">Катцхаймер, Вольфганг</a>
+                        <a class="panel__link" href="#tab__card-de">Katzheimer, Wolfgang</a>
                       </li>
                       <li class="panel__item">
-                        <a class="panel__link" href="#tab__card-de">Нотке, Бернт</a>
+                        <a class="panel__link" href="#tab__card-de">Notke, Bernt</a>
                       </li>
                       <li class="panel__item">
-                        <a class="panel__link" href="#tab__card-de">Плейденвурф, Ганс</a>
+                        <a class="panel__link" href="#tab__card-de">Pleidenwurff, Hans</a>
                       </li>
                       <li class="panel__item">
-                        <a class="panel__link" href="#tab__card-de">Шонгауэр, Мартин</a>
+                        <a class="panel__link" href="#tab__card-de">Schongauer, Martin</a>
                       </li>
                     </ul>
                   </div>
                 </li>
                 <li class="accordion__wrap">
-                  <button class="accordion__btn"><span>C&nbsp;1500 по&nbsp;1599&nbsp;гг.</span></button>
+                  <button class="accordion__btn"><span>From&nbsp;1500 to&nbsp;1599&nbsp;</span></button>
                   <div class="panel accordion__panel">
                     <div class="panel-placeholder">
                       <div class="pic-placeholder"></div>
                       <div class="text-placeholder">
-                        <p class="caption-placeholder">Здесь пока пусто</p>
-                        <p class="descr-placeholder">А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя</p>
-                        <a class="link-placeholder" href="#gallery">В&nbsp;галерею</a>
+                        <p class="caption-placeholder">Empty for now</p>
+                        <p class="descr-placeholder">In&nbsp;the&nbsp;gallery&nbsp;you can always find something interesting for yourself</p>
+                        <a class="link-placeholder" href="#gallery">To&nbsp;gallery</a>
                       </div>
                     </div>
                   </div>
                 </li>
                 <li class="accordion__wrap">
-                  <button class="accordion__btn"><span>C&nbsp;1600 по&nbsp;1699&nbsp;гг.</span></button>
+                  <button class="accordion__btn"><span>From&nbsp;1600 to&nbsp;1699&nbsp;</span></button>
                   <div class="panel accordion__panel">
                     <div class="panel-placeholder">
                       <div class="pic-placeholder"></div>
                       <div class="text-placeholder">
-                        <p class="caption-placeholder">Здесь пока пусто</p>
-                        <p class="descr-placeholder">А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя</p>
-                        <a class="link-placeholder" href="#gallery">В&nbsp;галерею</a>
+                        <p class="caption-placeholder">Empty for now</p>
+                        <p class="descr-placeholder">In&nbsp;the&nbsp;gallery&nbsp;you can always find something interesting for yourself</p>
+                        <a class="link-placeholder" href="#gallery">To&nbsp;gallery</a>
                       </div>
                     </div>
                   </div>
                 </li>
                 <li class="accordion__wrap">
-                  <button class="accordion__btn"><span>C&nbsp;1700 по&nbsp;1799&nbsp;гг.</span></button>
+                  <button class="accordion__btn"><span>From&nbsp;1700 to&nbsp;1799&nbsp;</span></button>
                   <div class="panel accordion__panel">
                     <div class="panel-placeholder">
                       <div class="pic-placeholder"></div>
                       <div class="text-placeholder">
-                        <p class="caption-placeholder">Здесь пока пусто</p>
-                        <p class="descr-placeholder">А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя</p>
-                        <a class="link-placeholder" href="#gallery">В&nbsp;галерею</a>
+                        <p class="caption-placeholder">Empty for now</p>
+                        <p class="descr-placeholder">In&nbsp;the&nbsp;gallery&nbsp;you can always find something interesting for yourself</p>
+                        <a class="link-placeholder" href="#gallery">To&nbsp;gallery</a>
                       </div>
                     </div>
                   </div>
                 </li>
                 <li class="accordion__wrap">
-                  <button class="accordion__btn"><span>C&nbsp;1800 по&nbsp;1899&nbsp;гг.</span></button>
+                  <button class="accordion__btn"><span>From&nbsp;1800 to&nbsp;1899&nbsp;</span></button>
                   <div class="panel accordion__panel">
                     <div class="panel-placeholder">
                       <div class="pic-placeholder"></div>
                       <div class="text-placeholder">
-                        <p class="caption-placeholder">Здесь пока пусто</p>
-                        <p class="descr-placeholder">А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя</p>
-                        <a class="link-placeholder" href="#gallery">В&nbsp;галерею</a>
+                        <p class="caption-placeholder">Empty for now</p>
+                        <p class="descr-placeholder">In&nbsp;the&nbsp;gallery&nbsp;you can always find something interesting for yourself</p>
+                        <a class="link-placeholder" href="#gallery">To&nbsp;gallery</a>
                       </div>
                     </div>
                   </div>
                 </li>
                 <li class="accordion__wrap">
-                  <button class="accordion__btn"><span>C&nbsp;1900 по&nbsp;1999&nbsp;гг.</span></button>
+                  <button class="accordion__btn"><span>From&nbsp;1900 to&nbsp;1999&nbsp;</span></button>
                   <div class="panel accordion__panel">
                     <div class="panel-placeholder">
                       <div class="pic-placeholder"></div>
                       <div class="text-placeholder">
-                        <p class="caption-placeholder">Здесь пока пусто</p>
-                        <p class="descr-placeholder">А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя</p>
-                        <a class="link-placeholder" href="#gallery">В&nbsp;галерею</a>
+                        <p class="caption-placeholder">Empty for now</p>
+                        <p class="descr-placeholder">In&nbsp;the&nbsp;gallery&nbsp;you can always find something interesting for yourself</p>
+                        <a class="link-placeholder" href="#gallery">To&nbsp;gallery</a>
                       </div>
                     </div>
                   </div>
                 </li>
                 <li class="accordion__wrap">
-                  <button class="accordion__btn"><span>C 2000 г.</span></button>
+                  <button class="accordion__btn"><span>From&nbsp;2000</span></button>
                   <div class="panel accordion__panel">
                     <div class="panel-placeholder">
                       <div class="pic-placeholder"></div>
                       <div class="text-placeholder">
-                        <p class="caption-placeholder">Здесь пока пусто</p>
-                        <p class="descr-placeholder">А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя</p>
-                        <a class="link-placeholder" href="#gallery">В&nbsp;галерею</a>
+                        <p class="caption-placeholder">Empty for now</p>
+                        <p class="descr-placeholder">In&nbsp;the&nbsp;gallery&nbsp;you can always find something interesting for yourself</p>
+                        <a class="link-placeholder" href="#gallery">To&nbsp;gallery</a>
                       </div>
                     </div>
                   </div>
@@ -1040,190 +1034,172 @@
             </div>
             <div class="tab catalogue__tab" data-target="it">
               <p class="text catalogue__descr">
-                Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа
-                политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и&nbsp;морали. Являясь всего
-                лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии
-                и&nbsp;по&nbsp;сей день остаются уделом либералов, которые жаждут быть функционально разнесены
-                на&nbsp;независимые элементы.
+                The shareholders of&nbsp;the largest companies, which are a&nbsp;vivid example of&nbsp;the continental European type of&nbsp;political culture, will be&nbsp;declared violating the universal norms of&nbsp;ethics and morality. Being just part of&nbsp;the overall picture, striving to&nbsp;supplant traditional production, nanotechnology and to&nbsp;today remain the lot of&nbsp;liberals who crave to&nbsp;be&nbsp;functionally separated into independent elements.
               </p>
               <div class="card tab__card" id="tab__card-it">
                 <img class="card__pic" loading="lazy" src="./img/catalogue/catalogue-girlandayo.jpg" 
-                  alt="Доменико Гирландайо">
+                  alt="Domenico Ghirlandaio">
                   <!--return loading="lazy" -->
-                <h3 class="card__title">Доменико Гирландайо</h3>
-                <span class="card__date">2&nbsp;июня 1448&nbsp;&mdash; 11&nbsp;января 1494.</span>
+                <h3 class="card__title">Domenico Ghirlandaio</h3>
+                <span class="card__date">June&nbsp;2, 1448&nbsp;&mdash; January&nbsp;11, 1494</span>
                 <p class="card__text">
-                  Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
-                  продолжили его брат Давид и&nbsp;сын Ридольфо. Глава художественной мастерской, где юный Микеланджело
-                  в&nbsp;течение года овладевал профессиональными навыками. Автор фресковых циклов, в&nbsp;которых
-                  выпукло, со&nbsp;всевозможными подробностями показана домашняя жизнь библейских персонажей
-                  (в&nbsp;их&nbsp;роли выступают знатные граждане Флоренции в&nbsp;костюмах того времени).
+                  One of&nbsp;the leading Florentine artists Quattrocento, the founder of&nbsp;an&nbsp;artistic dynasty, which was continued by&nbsp;his brother David and son Ridolfo. The head of&nbsp;the art workshop, where the young Michelangelo mastered professional skills for a&nbsp;year. The author of&nbsp;fresco cycles, in&nbsp;which the home life of&nbsp;biblical characters is&nbsp;shown in&nbsp;convex detail (in&nbsp;their role are noble citizens of&nbsp;Florence in&nbsp;costumes of&nbsp;that time).
                 </p>
               </div>
               <ul class="ul accordion tab__accordion is-active" >
                 <li class="accordion__wrap is-active">
-                  <button class="accordion__btn"><span>C&nbsp;1400 по&nbsp;1499&nbsp;гг.</span></button>
+                  <button class="accordion__btn"><span>From&nbsp;1400 to&nbsp;1499&nbsp;</span></button>
                   <div class="panel accordion__panel">
                     <ul class="ul panel__list">
                       <li class="panel__item">
-                        <a class="panel__link" href="#tab__card-it">Бенедетто ди Биндо</a>
+                        <a class="panel__link" href="#tab__card-it">Benedetto di Bindo</a>
                       </li>
                       <li class="panel__item">
-                        <a class="panel__link" href="#tab__card-it">Бергоньоне, Амброджо</a>
+                        <a class="panel__link" href="#tab__card-it">Bergonione, Ambrogio</a>
                       </li>
                       <li class="panel__item">
-                        <a class="panel__link" href="#tab__card-it">Биссоло, Франческо</a>
+                        <a class="panel__link" href="#tab__card-it">Francesco Bissolo</a>
                       </li>
                       <li class="panel__item">
-                        <a class="panel__link" href="#tab__card-it">Больтраффио, Джованни</a>
+                        <a class="panel__link" href="#tab__card-it">Giovanni Boltraffio</a>
                       </li>
                       <li class="panel__item">
-                        <a class="panel__link" href="#tab__card-it">Бонсиньори, Франческо</a>
+                        <a class="panel__link" href="#tab__card-it">Francesco Bonsignori</a>
                       </li>
                       <li class="panel__item">
-                        <a class="panel__link" href="#tab__card-it">Боттичини, Рафаэлло</a>
+                        <a class="panel__link" href="#tab__card-it">Raffaello Botticini</a>
                       </li>
                       <li class="panel__item">
-                        <a class="panel__link" href="#tab__card-it">Брамантино</a>
+                        <a class="panel__link" href="#tab__card-it">Bramantino</a>
                       </li>
                       <li class="panel__item">
-                        <a class="panel__link" href="#tab__card-it">Бреа, Людовико</a>
+                        <a class="panel__link" href="#tab__card-it">Brea, Ludovico</a>
                       </li>
                       <li class="panel__item">
-                        <a class="panel__link" href="#tab__card-it">Бьяджо д'Антонио Туччи</a>
+                        <a class="panel__link" href="#tab__card-it">Biagio d'Antonio Tucci</a>
                       </li>
                       <li class="panel__item">
-                        <a class="panel__link" href="#tab__card-it">Веккьетта</a>
+                        <a class="panel__link" href="#tab__card-it">Vecchietta</a>
                       </li>
                       <li class="panel__item">
-                        <a class="panel__link" href="#tab__card-it">Андреа Вероккьо</a>
+                        <a class="panel__link" href="#tab__card-it">Andrea Verrocchio</a>
                       </li>
                       <li class="panel__item">
-                        <a class="panel__link" href="#tab__card-it">Доменико Гирландайо</a>
+                        <a class="panel__link" href="#tab__card-it">Domenico Ghirlandaio</a>
                       </li>
                       <li class="panel__item">
-                        <a class="panel__link" href="#tab__card-it">Беноццо Гоццоли</a>
+                        <a class="panel__link" href="#tab__card-it">Benozzo Gozzoli</a>
                       </li>
                       <li class="panel__item">
-                        <a class="panel__link" href="#tab__card-it">Граначчи, Франческо</a>
+                        <a class="panel__link" href="#tab__card-it">Francesco Granacci</a>
                       </li>
                       <li class="panel__item">
-                        <a class="panel__link" href="#tab__card-it">Грегорио ди Чекко</a>
+                        <a class="panel__link" href="#tab__card-it">Gregorio di Cecco</a>
                       </li>
                       <li class="panel__item">
-                        <a class="panel__link" href="#tab__card-it">Джованни да Удине</a>
+                        <a class="panel__link" href="#tab__card-it">Giovanni da Udine</a>
                       </li>
                       <li class="panel__item">
-                        <a class="panel__link" href="#tab__card-it">Джованни ди Паоло</a>
+                        <a class="panel__link" href="#tab__card-it">Giovanni di Paolo</a>
                       </li>
                       <li class="panel__item">
-                        <a class="panel__link" href="#tab__card-it">Джорджоне</a>
+                        <a class="panel__link" href="#tab__card-it">Giorgione</a>
                       </li>
                       <li class="panel__item">
-                        <a class="panel__link" href="#tab__card-it">Парентино, Бернардо</a>
+                        <a class="panel__link" href="#tab__card-it">Parentino, Bernardo</a>
                       </li>
                       <li class="panel__item">
-                        <a class="panel__link" href="#tab__card-it">Пезеллино</a>
+                        <a class="panel__link" href="#tab__card-it">Pesellino</a>
                       </li>
                       <li class="panel__item">
-                        <a class="panel__link" href="#tab__card-it">Пьетро Перуджино</a>
+                        <a class="panel__link" href="#tab__card-it">Pietro Perugino</a>
                       </li>
                       <li class="panel__item">
-                        <a class="panel__link" href="#tab__card-it">Перуцци, Бальдассаре</a>
+                        <a class="panel__link" href="#tab__card-it">Peruzzi, Baldassare</a>
                       </li>
                       <li class="panel__item">
-                        <a class="panel__link" href="#tab__card-it">Пизанелло</a>
+                        <a class="panel__link" href="#tab__card-it">Pisanello</a>
                       </li>
                       <li class="panel__item">
-                        <a class="panel__link" href="#tab__card-it">Пинтуриккьо</a>
-                      </li>
-                      <!-- TEMPORAL FIX FOR PIXEL PERFECT -->
-                      <li class="panel__item temp-fix">
-                        <a class="panel__link">TEMPORAL</a>
-                      </li>
-                      <li class="panel__item temp-fix">
-                        <a class="panel__link">TEMPORAL</a>
-                      </li>
-                      <li class="panel__item temp-fix">
-                        <a class="panel__link">TEMPORAL</a>
+                        <a class="panel__link" href="#tab__card-it">Pinturicchio</a>
                       </li>
                     </ul>
                   </div>
                 </li>
                 <li class="accordion__wrap">
-                  <button class="accordion__btn"><span>C&nbsp;1500 по&nbsp;1599&nbsp;гг.</span></button>
+                  <button class="accordion__btn"><span>From&nbsp;1500 to&nbsp;1599&nbsp;</span></button>
                   <div class="panel accordion__panel">
                     <div class="panel-placeholder">
                       <div class="pic-placeholder"></div>
                       <div class="text-placeholder">
-                        <p class="caption-placeholder">Здесь пока пусто</p>
-                        <p class="descr-placeholder">А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя</p>
-                        <a class="link-placeholder" href="#gallery">В&nbsp;галерею</a>
+                        <p class="caption-placeholder">Empty for now</p>
+                        <p class="descr-placeholder">In&nbsp;the&nbsp;gallery&nbsp;you can always find something interesting for yourself</p>
+                        <a class="link-placeholder" href="#gallery">To&nbsp;gallery</a>
                       </div>
                     </div>
                   </div>
                 </li>
                 <li class="accordion__wrap">
-                  <button class="accordion__btn"><span>C&nbsp;1600 по&nbsp;1699&nbsp;гг.</span></button>
+                  <button class="accordion__btn"><span>From&nbsp;1600 to&nbsp;1699&nbsp;</span></button>
                   <div class="panel accordion__panel">
                     <div class="panel-placeholder">
                       <div class="pic-placeholder"></div>
                       <div class="text-placeholder">
-                        <p class="caption-placeholder">Здесь пока пусто</p>
-                        <p class="descr-placeholder">А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя</p>
-                        <a class="link-placeholder" href="#gallery">В&nbsp;галерею</a>
+                        <p class="caption-placeholder">Empty for now</p>
+                        <p class="descr-placeholder">In&nbsp;the&nbsp;gallery&nbsp;you can always find something interesting for yourself</p>
+                        <a class="link-placeholder" href="#gallery">To&nbsp;gallery</a>
                       </div>
                     </div>
                   </div>
                 </li>
                 <li class="accordion__wrap">
-                  <button class="accordion__btn"><span>C&nbsp;1700 по&nbsp;1799&nbsp;гг.</span></button>
+                  <button class="accordion__btn"><span>From&nbsp;1700 to&nbsp;1799&nbsp;</span></button>
                   <div class="panel accordion__panel">
                     <div class="panel-placeholder">
                       <div class="pic-placeholder"></div>
                       <div class="text-placeholder">
-                        <p class="caption-placeholder">Здесь пока пусто</p>
-                        <p class="descr-placeholder">А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя</p>
-                        <a class="link-placeholder" href="#gallery">В&nbsp;галерею</a>
+                        <p class="caption-placeholder">Empty for now</p>
+                        <p class="descr-placeholder">In&nbsp;the&nbsp;gallery&nbsp;you can always find something interesting for yourself</p>
+                        <a class="link-placeholder" href="#gallery">To&nbsp;gallery</a>
                       </div>
                     </div>
                   </div>
                 </li>
                 <li class="accordion__wrap">
-                  <button class="accordion__btn"><span>C&nbsp;1800 по&nbsp;1899&nbsp;гг.</span></button>
+                  <button class="accordion__btn"><span>From&nbsp;1800 to&nbsp;1899&nbsp;</span></button>
                   <div class="panel accordion__panel">
                     <div class="panel-placeholder">
                       <div class="pic-placeholder"></div>
                       <div class="text-placeholder">
-                        <p class="caption-placeholder">Здесь пока пусто</p>
-                        <p class="descr-placeholder">А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя</p>
-                        <a class="link-placeholder" href="#gallery">В&nbsp;галерею</a>
+                        <p class="caption-placeholder">Empty for now</p>
+                        <p class="descr-placeholder">In&nbsp;the&nbsp;gallery&nbsp;you can always find something interesting for yourself</p>
+                        <a class="link-placeholder" href="#gallery">To&nbsp;gallery</a>
                       </div>
                     </div>
                   </div>
                 </li>
                 <li class="accordion__wrap">
-                  <button class="accordion__btn"><span>C&nbsp;1900 по&nbsp;1999&nbsp;гг.</span></button>
+                  <button class="accordion__btn"><span>From&nbsp;1900 to&nbsp;1999&nbsp;</span></button>
                   <div class="panel accordion__panel">
                     <div class="panel-placeholder">
                       <div class="pic-placeholder"></div>
                       <div class="text-placeholder">
-                        <p class="caption-placeholder">Здесь пока пусто</p>
-                        <p class="descr-placeholder">А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя</p>
-                        <a class="link-placeholder" href="#gallery">В&nbsp;галерею</a>
+                        <p class="caption-placeholder">Empty for now</p>
+                        <p class="descr-placeholder">In&nbsp;the&nbsp;gallery&nbsp;you can always find something interesting for yourself</p>
+                        <a class="link-placeholder" href="#gallery">To&nbsp;gallery</a>
                       </div>
                     </div>
                   </div>
                 </li>
                 <li class="accordion__wrap">
-                  <button class="accordion__btn"><span>C 2000 г.</span></button>
+                  <button class="accordion__btn"><span>From&nbsp;2000</span></button>
                   <div class="panel accordion__panel">
                     <div class="panel-placeholder">
                       <div class="pic-placeholder"></div>
                       <div class="text-placeholder">
-                        <p class="caption-placeholder">Здесь пока пусто</p>
-                        <p class="descr-placeholder">А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя</p>
-                        <a class="link-placeholder" href="#gallery">В&nbsp;галерею</a>
+                        <p class="caption-placeholder">Empty for now</p>
+                        <p class="descr-placeholder">In&nbsp;the&nbsp;gallery&nbsp;you can always find something interesting for yourself</p>
+                        <a class="link-placeholder" href="#gallery">To&nbsp;gallery</a>
                       </div>
                     </div>
                   </div>
@@ -1232,112 +1208,112 @@
             </div>
             <div class="tab catalogue__tab" data-target="ru">
               <p class="text catalogue__descr">
-                Русские художники. Когда от милой моей долины поднимается пар и полдневное солнце стоит над непроницаемой чащей темного леса и лишь редкий луч проскальзывает в его святая святых, а я лежу в высокой траве у быстрого ручья и, прильнув к земле, вижу тысячи всевозможных былинок и чувствую, как близок моему сердцу крошечный мирок, что снует между стебельками, наблюдаю эти неисчислимые, непостижимые разновидности червяков и мошек.
+                Russian artists. When steam rises from my&nbsp;dear valley and the midday sun stands over the impenetrable thicket of&nbsp;the dark forest and only a&nbsp;rare ray slips into its holy of&nbsp;holies, and&nbsp;I lie in&nbsp;tall grass by&nbsp;a&nbsp;fast stream and, clinging to&nbsp;the ground, I&nbsp;see thousands of&nbsp;all kinds of&nbsp;blades of&nbsp;grass and feel how close my&nbsp;heart is&nbsp;a&nbsp;tiny little world that scurries between the stalks, I&nbsp;observe these innumerable, incomprehensible varieties of&nbsp;worms and midges.
               </p>
               <div class="card tab__card" id="tab__card-ru">
                 <img class="card__pic" loading="lazy" src="./img/catalogue/catalogue-russia.jpg" 
-                  alt="Андрей Рублёв">
+                  alt="Andrey Rublev">
                   <!--return loading="lazy" -->
-                <h3 class="card__title">Андрей Рублёв</h3>
-                <span class="card__date">около 1360&nbsp;&mdash; 17&nbsp;октября 1428.</span>
+                <h3 class="card__title">Andrey Rublev</h3>
+                <span class="card__date">approx.&nbsp;1360&nbsp;&mdash; October&nbsp;17, 1428</span>
                 <p class="card__text">
-                  Русский иконописец московской школы иконописи, книжной и&nbsp;монументальной живописи XV&nbsp;века. Канонизирован Русской православной церковью в&nbsp;лике преподобных. Большинство исследователей согласны с&nbsp;тем, что&nbsp;им, скорее всего, написана &laquo;Владимирская Богоматерь&raquo; (около 1409, Успенский собор, Владимир) и&nbsp;часть миниатюр &laquo;Евангелия Хитрово&raquo;.
+                  Russian icon painter of&nbsp;the Moscow school of&nbsp;icon painting, book and monumental painting of&nbsp;the 15th century. Canonized by&nbsp;the Russian Orthodox Church as&nbsp;a&nbsp;saint. Most researchers agree that he&nbsp;most likely painted the Vladimir Mother of&nbsp;God (circa 1409, Assumption Cathedral, Vladimir) and part of&nbsp;the miniatures of&nbsp;the Khitrovo Gospel.
                 </p>
               </div>
               <ul class="ul accordion tab__accordion is-active" >
                 <li class="accordion__wrap is-active">
-                  <button class="accordion__btn"><span>C&nbsp;1400 по&nbsp;1499&nbsp;гг.</span></button>
+                  <button class="accordion__btn"><span>From&nbsp;1400 to&nbsp;1499&nbsp;</span></button>
                   <div class="panel accordion__panel">
                     <ul class="ul panel__list">
                       <li class="panel__item">
-                        <a class="panel__link" href="#tab__card-ru">Амвросий</a>
+                        <a class="panel__link" href="#tab__card-en">Ambrose</a>
                       </li>
                       <li class="panel__item">
-                        <a class="panel__link" href="#tab__card-ru">Дионисий</a>
+                        <a class="panel__link" href="#tab__card-en">Dionysius</a>
                       </li>
                       <li class="panel__item">
-                        <a class="panel__link" href="#tab__card-ru">Прохор с Городца</a>
+                        <a class="panel__link" href="#tab__card-en">Prokhor from Gorodets</a>
                       </li>
                       <li class="panel__item">
-                        <a class="panel__link" href="#tab__card-ru">Андрей Рублёв</a>
+                        <a class="panel__link" href="#tab__card-en">Andrey Rublev</a>
                       </li>
                     </ul>
                   </div>
                 </li>
                 <li class="accordion__wrap">
-                  <button class="accordion__btn"><span>C&nbsp;1500 по&nbsp;1599&nbsp;гг.</span></button>
+                  <button class="accordion__btn"><span>From&nbsp;1500 to&nbsp;1599&nbsp;</span></button>
                   <div class="panel accordion__panel">
                     <div class="panel-placeholder">
                       <div class="pic-placeholder"></div>
                       <div class="text-placeholder">
-                        <p class="caption-placeholder">Здесь пока пусто</p>
-                        <p class="descr-placeholder">А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя</p>
-                        <a class="link-placeholder" href="#gallery">В&nbsp;галерею</a>
+                        <p class="caption-placeholder">Empty for now</p>
+                        <p class="descr-placeholder">In&nbsp;the&nbsp;gallery&nbsp;you can always find something interesting for yourself</p>
+                        <a class="link-placeholder" href="#gallery">To&nbsp;gallery</a>
                       </div>
                     </div>
                   </div>
                 </li>
                 <li class="accordion__wrap">
-                  <button class="accordion__btn"><span>C&nbsp;1600 по&nbsp;1699&nbsp;гг.</span></button>
+                  <button class="accordion__btn"><span>From&nbsp;1600 to&nbsp;1699&nbsp;</span></button>
                   <div class="panel accordion__panel">
                     <div class="panel-placeholder">
                       <div class="pic-placeholder"></div>
                       <div class="text-placeholder">
-                        <p class="caption-placeholder">Здесь пока пусто</p>
-                        <p class="descr-placeholder">А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя</p>
-                        <a class="link-placeholder" href="#gallery">В&nbsp;галерею</a>
+                        <p class="caption-placeholder">Empty for now</p>
+                        <p class="descr-placeholder">In&nbsp;the&nbsp;gallery&nbsp;you can always find something interesting for yourself</p>
+                        <a class="link-placeholder" href="#gallery">To&nbsp;gallery</a>
                       </div>
                     </div>
                   </div>
                 </li>
                 <li class="accordion__wrap">
-                  <button class="accordion__btn"><span>C&nbsp;1700 по&nbsp;1799&nbsp;гг.</span></button>
+                  <button class="accordion__btn"><span>From&nbsp;1700 to&nbsp;1799&nbsp;</span></button>
                   <div class="panel accordion__panel">
                     <div class="panel-placeholder">
                       <div class="pic-placeholder"></div>
                       <div class="text-placeholder">
-                        <p class="caption-placeholder">Здесь пока пусто</p>
-                        <p class="descr-placeholder">А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя</p>
-                        <a class="link-placeholder" href="#gallery">В&nbsp;галерею</a>
+                        <p class="caption-placeholder">Empty for now</p>
+                        <p class="descr-placeholder">In&nbsp;the&nbsp;gallery&nbsp;you can always find something interesting for yourself</p>
+                        <a class="link-placeholder" href="#gallery">To&nbsp;gallery</a>
                       </div>
                     </div>
                   </div>
                 </li>
                 <li class="accordion__wrap">
-                  <button class="accordion__btn"><span>C&nbsp;1800 по&nbsp;1899&nbsp;гг.</span></button>
+                  <button class="accordion__btn"><span>From&nbsp;1800 to&nbsp;1899&nbsp;</span></button>
                   <div class="panel accordion__panel">
                     <div class="panel-placeholder">
                       <div class="pic-placeholder"></div>
                       <div class="text-placeholder">
-                        <p class="caption-placeholder">Здесь пока пусто</p>
-                        <p class="descr-placeholder">А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя</p>
-                        <a class="link-placeholder" href="#gallery">В&nbsp;галерею</a>
+                        <p class="caption-placeholder">Empty for now</p>
+                        <p class="descr-placeholder">In&nbsp;the&nbsp;gallery&nbsp;you can always find something interesting for yourself</p>
+                        <a class="link-placeholder" href="#gallery">To&nbsp;gallery</a>
                       </div>
                     </div>
                   </div>
                 </li>
                 <li class="accordion__wrap">
-                  <button class="accordion__btn"><span>C&nbsp;1900 по&nbsp;1999&nbsp;гг.</span></button>
+                  <button class="accordion__btn"><span>From&nbsp;1900 to&nbsp;1999&nbsp;</span></button>
                   <div class="panel accordion__panel">
                     <div class="panel-placeholder">
                       <div class="pic-placeholder"></div>
                       <div class="text-placeholder">
-                        <p class="caption-placeholder">Здесь пока пусто</p>
-                        <p class="descr-placeholder">А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя</p>
-                        <a class="link-placeholder" href="#gallery">В&nbsp;галерею</a>
+                        <p class="caption-placeholder">Empty for now</p>
+                        <p class="descr-placeholder">In&nbsp;the&nbsp;gallery&nbsp;you can always find something interesting for yourself</p>
+                        <a class="link-placeholder" href="#gallery">To&nbsp;gallery</a>
                       </div>
                     </div>
                   </div>
                 </li>
                 <li class="accordion__wrap">
-                  <button class="accordion__btn"><span>C 2000 г.</span></button>
+                  <button class="accordion__btn"><span>From&nbsp;2000</span></button>
                   <div class="panel accordion__panel">
                     <div class="panel-placeholder">
                       <div class="pic-placeholder"></div>
                       <div class="text-placeholder">
-                        <p class="caption-placeholder">Здесь пока пусто</p>
-                        <p class="descr-placeholder">А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя</p>
-                        <a class="link-placeholder" href="#gallery">В&nbsp;галерею</a>
+                        <p class="caption-placeholder">Empty for now</p>
+                        <p class="descr-placeholder">In&nbsp;the&nbsp;gallery&nbsp;you can always find something interesting for yourself</p>
+                        <a class="link-placeholder" href="#gallery">To&nbsp;gallery</a>
                       </div>
                     </div>
                   </div>
@@ -1346,118 +1322,118 @@
             </div>
             <div class="tab catalogue__tab" data-target="be">
               <p class="text catalogue__descr">
-                Бельгийские художники. Чувствую близость всемогущего, создавшего нас по своему подобию, веяние вселюбящего, судившего нам парить в вечном блаженстве, когда взор мой туманится и все вокруг меня и небо надо мной запечатлены в моей душе, точно образ возлюбленной, - тогда, дорогой друг, меня часто томит мысль: "Ах! Как бы выразить, как бы вдохнуть в рисунок то, что так полно, так трепетно живет во мне, запечатлеть отражение моей души, как душа моя - отражение предвечного бога!"
+                Belgian artists. I&nbsp;feel the nearness of&nbsp;the almighty, who created&nbsp;us in&nbsp;his own image, the breath of&nbsp;the omnipotent, who judged&nbsp;us to&nbsp;soar in&nbsp;eternal bliss, when my&nbsp;gaze becomes foggy and everything around me&nbsp;and the sky above me&nbsp;are imprinted in&nbsp;my&nbsp;soul, like the image of&nbsp;a&nbsp;beloved&nbsp;&mdash; then, dear friend, I&nbsp;often torment thought: &laquo;Ah! How to&nbsp;express, how to&nbsp;breathe into the drawing that which lives so&nbsp;fully, so&nbsp;reverently in&nbsp;me, to&nbsp;capture the reflection of&nbsp;my&nbsp;soul, as&nbsp;my&nbsp;soul is&nbsp;the reflection of&nbsp;the eternal God!&raquo;
               </p>
               <div class="card tab__card" id="tab__card-be">
                 <img class="card__pic" loading="lazy" src="./img/catalogue/catalogue-belgium.jpg" 
-                  alt="Говартс, Абрахам">
+                  alt="Govarts, Abraham">
                   <!--return loading="lazy" -->
-                <h3 class="card__title">Говартс, Абрахам</h3>
-                <span class="card__date">30&nbsp;августа 1589&nbsp;&mdash; 9&nbsp;сентября 1626.</span>
+                <h3 class="card__title">Govarts, Abraham</h3>
+                <span class="card__date">August&nbsp;30, 1589&nbsp;&mdash; September&nbsp;9, 1626</span>
                 <p class="card__text">
-                  Художественное образование получил в&nbsp;мастерских Яна Брейгеля Старшего и&nbsp;Гиллиса ван Конингсло. В&nbsp;1607/1608 годах Абрахам Говартс становится мастером в&nbsp;антверпенской гильдии святого Луки, объединявшей художников этого города. В&nbsp;1622 году он&nbsp;вступает в&nbsp;брак с&nbsp;Изабеллой Гиллис, от&nbsp;которой имел двух дочерей. Обладал известным достатком, владея в&nbsp;Антверпене двумя домами.
+                  He&nbsp;received his artistic education in&nbsp;the workshops of&nbsp;Jan Brueghel the Elder and Gillis van Koningsloo. In&nbsp;1607/1608, Abraham Gowarts became a&nbsp;master in&nbsp;the Antwerp guild of&nbsp;St. Luke, which united the artists of&nbsp;this city. In&nbsp;1622&nbsp;he married Isabella Gillis, by&nbsp;whom he&nbsp;had two daughters. He&nbsp;had a&nbsp;certain wealth, owning two houses in&nbsp;Antwerp.
                 </p>
               </div>
               <ul class="ul accordion tab__accordion is-active" >
                 <li class="accordion__wrap is-active">
-                  <button class="accordion__btn"><span>C&nbsp;1400 по&nbsp;1499&nbsp;гг.</span></button>
+                  <button class="accordion__btn"><span>From&nbsp;1400 to&nbsp;1499&nbsp;</span></button>
                   <div class="panel accordion__panel">
                     <ul class="ul panel__list">
                       <li class="panel__item">
-                        <a class="panel__link" href="#tab__card-be">Говартс, Абрахам</a>
+                        <a class="panel__link" href="#tab__card-be">Govarts, Abraham</a>
                       </li>
                       <li class="panel__item">
-                        <a class="panel__link" href="#tab__card-be">Кейринкс, Александр</a>
+                        <a class="panel__link" href="#tab__card-be">Keirinks, Alexander</a>
                       </li>
                       <li class="panel__item">
-                        <a class="panel__link" href="#tab__card-be">Момпер, Йоос де</a>
+                        <a class="panel__link" href="#tab__card-be">Momper, Joos de</a>
                       </li>
                       <li class="panel__item">
-                        <a class="panel__link" href="#tab__card-be">Роби, Жан-Батист</a>
+                        <a class="panel__link" href="#tab__card-be">Roby, Jean-Baptiste</a>
                       </li>
                       <li class="panel__item">
-                        <a class="panel__link" href="#tab__card-be">Саделер, Валериус де</a>
+                        <a class="panel__link" href="#tab__card-be">Valerius de Sadeler</a>
                       </li>
                       <li class="panel__item">
-                        <a class="panel__link" href="#tab__card-be">Холлер, Альфред</a>
+                        <a class="panel__link" href="#tab__card-be">Holler, Alfred</a>
                       </li>
                     </ul>
                   </div>
                 </li>
                 <li class="accordion__wrap">
-                  <button class="accordion__btn"><span>C&nbsp;1500 по&nbsp;1599&nbsp;гг.</span></button>
+                  <button class="accordion__btn"><span>From&nbsp;1500 to&nbsp;1599&nbsp;</span></button>
                   <div class="panel accordion__panel">
                     <div class="panel-placeholder">
                       <div class="pic-placeholder"></div>
                       <div class="text-placeholder">
-                        <p class="caption-placeholder">Здесь пока пусто</p>
-                        <p class="descr-placeholder">А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя</p>
-                        <a class="link-placeholder" href="#gallery">В&nbsp;галерею</a>
+                        <p class="caption-placeholder">Empty for now</p>
+                        <p class="descr-placeholder">In&nbsp;the&nbsp;gallery&nbsp;you can always find something interesting for yourself</p>
+                        <a class="link-placeholder" href="#gallery">To&nbsp;gallery</a>
                       </div>
                     </div>
                   </div>
                 </li>
                 <li class="accordion__wrap">
-                  <button class="accordion__btn"><span>C&nbsp;1600 по&nbsp;1699&nbsp;гг.</span></button>
+                  <button class="accordion__btn"><span>From&nbsp;1600 to&nbsp;1699&nbsp;</span></button>
                   <div class="panel accordion__panel">
                     <div class="panel-placeholder">
                       <div class="pic-placeholder"></div>
                       <div class="text-placeholder">
-                        <p class="caption-placeholder">Здесь пока пусто</p>
-                        <p class="descr-placeholder">А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя</p>
-                        <a class="link-placeholder" href="#gallery">В&nbsp;галерею</a>
+                        <p class="caption-placeholder">Empty for now</p>
+                        <p class="descr-placeholder">In&nbsp;the&nbsp;gallery&nbsp;you can always find something interesting for yourself</p>
+                        <a class="link-placeholder" href="#gallery">To&nbsp;gallery</a>
                       </div>
                     </div>
                   </div>
                 </li>
                 <li class="accordion__wrap">
-                  <button class="accordion__btn"><span>C&nbsp;1700 по&nbsp;1799&nbsp;гг.</span></button>
+                  <button class="accordion__btn"><span>From&nbsp;1700 to&nbsp;1799&nbsp;</span></button>
                   <div class="panel accordion__panel">
                     <div class="panel-placeholder">
                       <div class="pic-placeholder"></div>
                       <div class="text-placeholder">
-                        <p class="caption-placeholder">Здесь пока пусто</p>
-                        <p class="descr-placeholder">А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя</p>
-                        <a class="link-placeholder" href="#gallery">В&nbsp;галерею</a>
+                        <p class="caption-placeholder">Empty for now</p>
+                        <p class="descr-placeholder">In&nbsp;the&nbsp;gallery&nbsp;you can always find something interesting for yourself</p>
+                        <a class="link-placeholder" href="#gallery">To&nbsp;gallery</a>
                       </div>
                     </div>
                   </div>
                 </li>
                 <li class="accordion__wrap">
-                  <button class="accordion__btn"><span>C&nbsp;1800 по&nbsp;1899&nbsp;гг.</span></button>
+                  <button class="accordion__btn"><span>From&nbsp;1800 to&nbsp;1899&nbsp;</span></button>
                   <div class="panel accordion__panel">
                     <div class="panel-placeholder">
                       <div class="pic-placeholder"></div>
                       <div class="text-placeholder">
-                        <p class="caption-placeholder">Здесь пока пусто</p>
-                        <p class="descr-placeholder">А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя</p>
-                        <a class="link-placeholder" href="#gallery">В&nbsp;галерею</a>
+                        <p class="caption-placeholder">Empty for now</p>
+                        <p class="descr-placeholder">In&nbsp;the&nbsp;gallery&nbsp;you can always find something interesting for yourself</p>
+                        <a class="link-placeholder" href="#gallery">To&nbsp;gallery</a>
                       </div>
                     </div>
                   </div>
                 </li>
                 <li class="accordion__wrap">
-                  <button class="accordion__btn"><span>C&nbsp;1900 по&nbsp;1999&nbsp;гг.</span></button>
+                  <button class="accordion__btn"><span>From&nbsp;1900 to&nbsp;1999&nbsp;</span></button>
                   <div class="panel accordion__panel">
                     <div class="panel-placeholder">
                       <div class="pic-placeholder"></div>
                       <div class="text-placeholder">
-                        <p class="caption-placeholder">Здесь пока пусто</p>
-                        <p class="descr-placeholder">А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя</p>
-                        <a class="link-placeholder" href="#gallery">В&nbsp;галерею</a>
+                        <p class="caption-placeholder">Empty for now</p>
+                        <p class="descr-placeholder">In&nbsp;the&nbsp;gallery&nbsp;you can always find something interesting for yourself</p>
+                        <a class="link-placeholder" href="#gallery">To&nbsp;gallery</a>
                       </div>
                     </div>
                   </div>
                 </li>
                 <li class="accordion__wrap">
-                  <button class="accordion__btn"><span>C 2000 г.</span></button>
+                  <button class="accordion__btn"><span>From&nbsp;2000</span></button>
                   <div class="panel accordion__panel">
                     <div class="panel-placeholder">
                       <div class="pic-placeholder"></div>
                       <div class="text-placeholder">
-                        <p class="caption-placeholder">Здесь пока пусто</p>
-                        <p class="descr-placeholder">А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя</p>
-                        <a class="link-placeholder" href="#gallery">В&nbsp;галерею</a>
+                        <p class="caption-placeholder">Empty for now</p>
+                        <p class="descr-placeholder">In&nbsp;the&nbsp;gallery&nbsp;you can always find something interesting for yourself</p>
+                        <a class="link-placeholder" href="#gallery">To&nbsp;gallery</a>
                       </div>
                     </div>
                   </div>
@@ -1472,24 +1448,23 @@
     <section class="events" id="events">
       <div class="container events__container">
         <div class="content events__content">
-          <h2 class="heading events__heading">События</h2>
+          <h2 class="heading events__heading">Events</h2>
           <div class="events__wrapper-container swiper">
-            <ul class="ul events__wrapper swiper-wrapper" aria-label="события">
+            <ul class="ul events__wrapper swiper-wrapper" aria-label="Events">
               <li class="events__slide">
                 <article class="events__card">
                   <picture>
                     <source media="(min-width: 1025px)" srcset="./img/events/event_1.jpg">
-                    <img class="events__image" src="./img/events/event_1-less.jpg" loading="lazy" alt="Книжная гравюра">
+                    <img class="events__image" src="./img/events/event_1-less.jpg" loading="lazy" alt="Book engraving">
                   </picture>
                   <div class="events__card-content">
                     <span class="events__info">
-                      Музей им. Щусева
-                      <br>с&nbsp;20&nbsp;марта по&nbsp;30&nbsp;апреля
+                      Shchusev Museum
+                      <br>from 20&nbsp;March to&nbsp;30&nbsp;April
                     </span>
-                    <h3 class="events__title">Книжная гравюра в живом восприятии</h3>
-                    <p class="text events__descr">Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель
-                      художественной династии, которую продолжили его брат Давид и&nbsp;сын Ридольфо.</p>
-                    <a class="link events__link" href="">Подробнее</a>
+                    <h3 class="events__title">Book engraving in living perception</h3>
+                    <p class="text events__descr">One of&nbsp;the leading Florentine artists Quattrocento, the founder of&nbsp;an&nbsp;artistic dynasty, which was continued by&nbsp;his brother David and son Ridolfo.</p>
+                    <a class="link events__link" href="">More</a>
                   </div>
                 </article>
               </li>
@@ -1497,16 +1472,16 @@
                 <article class="events__card">
                   <picture>
                     <source media="(min-width: 1025px)" srcset="./img/events/event_2.jpg">
-                    <img class="events__image" src="./img/events/event_2-less.jpg" loading="lazy" alt="Дмитрий Петров">
+                    <img class="events__image" src="./img/events/event_2-less.jpg" loading="lazy" alt="Dmitry Petrov">
                   </picture>
                   <div class="events__card-content">
                     <span class="events__info">
-                      ММОМА
-                      <br>24&nbsp;марта 19:00
+                      MMOMA
+                      <br>March 24 19:00
                     </span>
-                    <h3 class="events__title">&laquo;Открытая дискуссия&raquo;. Дмитрий Петров и Сергей Ильин.</h3>
-                    <p class="text events__descr">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта.</p>
-                    <a class="link events__link" href="">Подробнее</a>
+                    <h3 class="events__title">&laquo;Open discussion&raquo;. Dmitry Petrov and Sergey Ilyin.</h3>
+                    <p class="text events__descr">The high level of&nbsp;engagement of&nbsp;the target audience is&nbsp;a&nbsp;clear proof of&nbsp;a&nbsp;simple fact.</p>
+                    <a class="link events__link" href="">More</a>
                   </div>
                 </article>
               </li>
@@ -1514,16 +1489,16 @@
                 <article class="events__card">
                   <picture>
                     <source media="(min-width: 1025px)" srcset="./img/events/event_3.jpg">
-                    <img class="events__image" src="./img/events/event_3-less.jpg" loading="lazy" alt="Еврейский музей">
+                    <img class="events__image" src="./img/events/event_3-less.jpg" loading="lazy" alt="Jewish Museum">
                   </picture>
                   <div class="events__card-content">
                     <span class="events__info">
-                      Еврейский музей
-                      <br>с&nbsp;31&nbsp;марта по&nbsp;21&nbsp;апреля
+                      Jewish Museum
+                      <br>from 31&nbsp;March to&nbsp;21&nbsp;April
                     </span>
-                    <h3 class="events__title">Выставка «Формация 2020»</h3>
-                    <p class="text events__descr">Идейные соображения высшего порядка, а&nbsp;также современная методология разработки играет важную роль в&nbsp;формировании глубокомысленных рассуждений.</p>
-                    <a class="link events__link" href="">Подробнее</a>
+                    <h3 class="events__title">Exhibition "Formation 2020"</h3>
+                    <p class="text events__descr">Higher-order thought considerations, as&nbsp;well as&nbsp;modern development methodology, play an&nbsp;important role in&nbsp;the formation of&nbsp;thoughtful reasoning.</p>
+                    <a class="link events__link" href="">More</a>
                   </div>
                 </article>
               </li>
@@ -1531,16 +1506,16 @@
                 <article class="events__card">
                   <picture>
                     <source media="(min-width: 1025px)" srcset="./img/events/event_4.jpg">
-                    <img class="events__image" src="./img/events/event_4-less.jpg" loading="lazy" alt="Биеннале">
+                    <img class="events__image" src="./img/events/event_4-less.jpg" loading="lazy" alt="Biennale">
                   </picture>
                   <div class="events__card-content">
                     <span class="events__info">
-                      Третьяковка на&nbsp;Крымском валу
-                      <br>с&nbsp;30&nbsp;марта по&nbsp;30&nbsp;апреля
+                      Tretyakov Gallery on Krymsky Val
+                      <br>from 30&nbsp;March to&nbsp;30&nbsp;April
                     </span>
-                    <h3 class="events__title">XXIV Международная биеннале молодого искусства</h3>
-                    <p class="text events__descr">Внезапно, реплицированные с&nbsp;зарубежных источников, современные исследования.</p>
-                    <a class="link events__link" href="">Подробнее</a>
+                    <h3 class="events__title">XXIV International Biennale for Young Art</h3>
+                    <p class="text events__descr">Suddenly, replicated from foreign sources, modern research.</p>
+                    <a class="link events__link" href="">More</a>
                   </div>
                 </article>
               </li>
@@ -1549,23 +1524,23 @@
                   <picture>
                     <source media="(min-width: 1025px)" srcset="./img/events/event_5.jpg">
                     <img class="events__image" src="./img/events/event_5-less.jpg" loading="lazy"
-                      alt="Фото Джона Винзора">
+                      alt="Photo by John Winsor">
                   </picture>
                   <div class="events__card-content">
                     <span class="events__info">
-                      ММАМ
-                      <br>с&nbsp;8&nbsp;апреля по&nbsp;20&nbsp;мая
+                      MMAM
+                      <br>from April 8&nbsp;to&nbsp;May&nbsp;20
                     </span>
-                    <h3 class="events__title">Джон Винзор. Фотографии из серии &laquo;Метафора серебра&raquo;</h3>
-                    <p class="text events__descr">Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и&nbsp;сын Ридольфо.</p>
-                    <a class="link events__link" href="">Подробнее</a>
+                    <h3 class="events__title">John Winsor. Photos from the series &laquo;Metaphor of&nbsp;silver&raquo;</h3>
+                    <p class="text events__descr">One of&nbsp;the leading Florentine artists Quattrocento, the founder of&nbsp;an&nbsp;artistic dynasty, which was continued by&nbsp;his brother David and son Ridolfo.</p>
+                    <a class="link events__link" href="">More</a>
                   </div>
                 </article>
               </li>
             </ul>
           </div>
           <div class="events__btn-wrapper">
-            <button class="btn events__btn">Все&nbsp;события</button>
+            <button class="btn events__btn">All&nbsp;events</button>
           </div>
         </div>
       </div>
@@ -1575,82 +1550,82 @@
       <div class="container books__container">
         <div class="books__content">
           <form class="books__filter-column">
-            <h2 class="heading books__heading">Издания</h2>
+            <h2 class="heading books__heading">Books</h2>
 
-            <span class="books__checkwrap-text">Категории</span>
-            <button class="btn books__checkwrap-text" type="button">Категории</button>
+            <span class="books__checkwrap-text">Categories</span>
+            <button class="btn books__checkwrap-text" type="button">Categories</button>
             <div class="books__dropdown-wrapper">
-              <ul class="ul books__checkwrap books__checkwrap-main" aria-label="Фильтр по категориям">
+              <ul class="ul books__checkwrap books__checkwrap-main" aria-label="Filter by category">
                 <li class="books__checkbox-item">
                   <label class="books__checkbox-label">
                     <input class="visually-hidden books__checkbox" type="checkbox" name="1" id="main-1">
-                    <span class="books__checkbox-text">Бестселлеры</span>
+                    <span class="books__checkbox-text">Bestsellers</span>
                   </label>
                 </li>
                 <li class="books__checkbox-item">
                   <label class="books__checkbox-label">
                     <input class="visually-hidden books__checkbox" type="checkbox" name="2" id="main-2">
-                    <span class="books__checkbox-text">Искусство</span>
+                    <span class="books__checkbox-text">Art</span>
                   </label>
                 </li>
                 <li class="books__checkbox-item">
                   <label class="books__checkbox-label">
                     <input class="visually-hidden books__checkbox" type="checkbox" name="3" id="main-3">
-                    <span class="books__checkbox-text">Архитектура</span>
+                    <span class="books__checkbox-text">Architecture</span>
                   </label>
                 </li>
                 <li class="books__checkbox-item visible">
                   <label class="books__checkbox-label is-active">
                     <input class="visually-hidden books__checkbox" type="checkbox" name="4" id="main-4" checked>
-                    <span class="books__checkbox-text">Дизайн</span>
+                    <span class="books__checkbox-text">Design</span>
                   </label>
                 </li>
                 <li class="books__checkbox-item">
                   <label class="books__checkbox-label">
                     <input class="visually-hidden books__checkbox" type="checkbox" name="5" id="main-5">
-                    <span class="books__checkbox-text">Мода</span>
+                    <span class="books__checkbox-text">Fashion</span>
                   </label>
                 </li>
                 <li class="books__checkbox-item">
                   <label class="books__checkbox-label">
                     <input class="visually-hidden books__checkbox" type="checkbox" name="6" id="main-6">
-                    <span class="books__checkbox-text">Детям</span>
+                    <span class="books__checkbox-text">For kids</span>
                   </label>
                 </li>
                 <li class="books__checkbox-item">
                   <label class="books__checkbox-label">
                     <input class="visually-hidden books__checkbox" type="checkbox" name="7" id="main-7">
-                    <span class="books__checkbox-text">Художественная литература</span>
+                    <span class="books__checkbox-text">Fiction</span>
                   </label>
                 </li>
                 <li class="books__checkbox-item">
                   <label class="books__checkbox-label">
                     <input class="visually-hidden books__checkbox" type="checkbox" name="8" id="main-8">
-                    <span class="books__checkbox-text">Публицистика</span>
+                    <span class="books__checkbox-text">Publicism</span>
                   </label>
                 </li>
                 <li class="books__checkbox-item">
                   <label class="books__checkbox-label">
                     <input class="visually-hidden books__checkbox" type="checkbox" name="9" id="main-9">
-                    <span class="books__checkbox-text">Путеводители</span>
+                    <span class="books__checkbox-text">Guides</span>
                   </label>
                 </li>
                 <li class="books__checkbox-item">
                   <label class="books__checkbox-label">
                     <input class="visually-hidden books__checkbox" type="checkbox" name="10" id="main-10">
-                    <span class="books__checkbox-text">Философия</span>
+                    <span class="books__checkbox-text">Philosophy</span>
                   </label>
                 </li>
                 <li class="books__checkbox-item">
                   <label class="books__checkbox-label">
                     <input class="visually-hidden books__checkbox" type="checkbox" name="11" id="main-11">
-                    <span class="books__checkbox-text">Учебная литература</span>
+                    <span class="books__checkbox-text">Educational literature</span>
                   </label>
                 </li>
                 <li class="books__checkbox-item">
                   <label class="books__checkbox-label">
                     <input class="visually-hidden books__checkbox" type="checkbox" name="12" id="main-12">
-                    <span class="books__checkbox-text">Журналы и&nbsp;газеты</span>
+                    <span class="books__checkbox-text">Magazines and&nbsp;newspapers</span>
                   </label>
                 </li>
               </ul>
@@ -1658,85 +1633,85 @@
                 <li class="books__checkbox-item-dropdown">
                   <label class="books__checkbox-label">
                     <input class="visually-hidden books__checkbox" type="checkbox" name="1" id="double-1">
-                    <span class="books__checkbox-text">Бестселлеры</span>
+                    <span class="books__checkbox-text">Bestsellers</span>
                   </label>
                 </li>
                 <li class="books__checkbox-item-dropdown">
                   <label class="books__checkbox-label">
                     <input class="visually-hidden books__checkbox" type="checkbox" name="2" id="double-2">
-                    <span class="books__checkbox-text">Искусство</span>
+                    <span class="books__checkbox-text">Art</span>
                   </label>
                 </li>
                 <li class="books__checkbox-item-dropdown">
                   <label class="books__checkbox-label">
                     <input class="visually-hidden books__checkbox" type="checkbox" name="3" id="double-3">
-                    <span class="books__checkbox-text">Архитектура</span>
+                    <span class="books__checkbox-text">Architecture</span>
                   </label>
                 </li>
                 <li class="books__checkbox-item-dropdown">
                   <label class="books__checkbox-label is-active">
                     <input class="visually-hidden books__checkbox" type="checkbox" name="4" id="double-4" checked>
-                    <span class="books__checkbox-text">Дизайн</span>
+                    <span class="books__checkbox-text">Design</span>
                   </label>
                 </li>
                 <li class="books__checkbox-item-dropdown">
                   <label class="books__checkbox-label">
                     <input class="visually-hidden books__checkbox" type="checkbox" name="5" id="double-5">
-                    <span class="books__checkbox-text">Мода</span>
+                    <span class="books__checkbox-text">Fashion</span>
                   </label>
                 </li>
                 <li class="books__checkbox-item-dropdown">
                   <label class="books__checkbox-label">
                     <input class="visually-hidden books__checkbox" type="checkbox" name="6" id="double-6">
-                    <span class="books__checkbox-text">Детям</span>
+                    <span class="books__checkbox-text">For kids</span>
                   </label>
                 </li>
                 <li class="books__checkbox-item-dropdown">
                   <label class="books__checkbox-label">
                     <input class="visually-hidden books__checkbox" type="checkbox" name="7" id="double-7">
-                    <span class="books__checkbox-text">Художественная литература</span>
+                    <span class="books__checkbox-text">Fiction</span>
                   </label>
                 </li>
                 <li class="books__checkbox-item-dropdown">
                   <label class="books__checkbox-label">
                     <input class="visually-hidden books__checkbox" type="checkbox" name="8" id="double-8">
-                    <span class="books__checkbox-text">Публицистика</span>
+                    <span class="books__checkbox-text">Publicism</span>
                   </label>
                 </li>
                 <li class="books__checkbox-item-dropdown">
                   <label class="books__checkbox-label">
                     <input class="visually-hidden books__checkbox" type="checkbox" name="9" id="double-9">
-                    <span class="books__checkbox-text">Путеводители</span>
+                    <span class="books__checkbox-text">Guides</span>
                   </label>
                 </li>
                 <li class="books__checkbox-item-dropdown">
                   <label class="books__checkbox-label">
                     <input class="visually-hidden books__checkbox" type="checkbox" name="10" id="double-10">
-                    <span class="books__checkbox-text">Философия</span>
+                    <span class="books__checkbox-text">Philosophy</span>
                   </label>
                 </li>
                 <li class="books__checkbox-item-dropdown">
                   <label class="books__checkbox-label">
                     <input class="visually-hidden books__checkbox" type="checkbox" name="11" id="double-11">
-                    <span class="books__checkbox-text">Учебная литература</span>
+                    <span class="books__checkbox-text">Educational literature</span>
                   </label>
                 </li>
                 <li class="books__checkbox-item-dropdown">
                   <label class="books__checkbox-label">
                     <input class="visually-hidden books__checkbox" type="checkbox" name="12" id="double-12">
-                    <span class="books__checkbox-text">Журналы и&nbsp;газеты</span>
+                    <span class="books__checkbox-text">Magazines and&nbsp;newspapers</span>
                   </label>
                 </li>
               </ul>
             </div>
 
-            <span class="books__pricewrap-caption">Цена</span>
+            <span class="books__pricewrap-caption">Price</span>
             <div class="books__price">
-              <span class="books__price-text">От</span>
+              <span class="books__price-text">from</span>
               <input class="books__price-input books__price-text" type="number" id="price-low" autocomplete="off" placeholder="50">
-              <span class="books__price-text">до</span>
+              <span class="books__price-text">to</span>
               <input class="books__price-input books__price-text" type="number" id="price-high" autocomplete="off" placeholder="25 000">
-              <span class="books__price-text">руб.</span>
+              <span class="books__price-text">rub.</span>
             </div>
           </form>
 
@@ -1751,67 +1726,67 @@
               <div class="books__wrapper-container">
                 <ul class="swiper-wrapper books__swiper-wrapper">
                   <li class="swiper-slide book books__book" data-set="1">
-                    <img class="book__image" src="./img/books/1.jpg" loading="lazy" alt="Исскуство цвета">
+                    <img class="book__image" src="./img/books/1.jpg" loading="lazy" alt="The art of color">
                     <div class="book__textwrap">
-                      <span class="book__title">Исскуство цвета</span>
-                      <span class="book__price">620 руб</span>
-                      <span class="book__author">Иттен, Иоханнес</span>
+                      <span class="book__title">The art of color</span>
+                      <span class="book__price">620 rub</span>
+                      <span class="book__author">Itten, Johannes</span>
                     </div>
-                    <button class="btn book__btn">Заказать</button>
+                    <button class="btn book__btn">Order now</button>
                   </li>
                   <li class="swiper-slide book books__book" data-set="2">
-                    <img class="book__image" src="./img/books/2.jpg" loading="lazy" alt="Типографика">
+                    <img class="book__image" src="./img/books/2.jpg" loading="lazy" alt="Typography">
                     <div class="book__textwrap">
-                      <span class="book__title">Типографика</span>
-                      <span class="book__price">2&nbsp;450 руб</span>
-                      <span class="book__author">Рудер, Эмиль</span>
+                      <span class="book__title">Typography</span>
+                      <span class="book__price">2&nbsp;450 rub</span>
+                      <span class="book__author">Ruder, Emil</span>
                     </div>
-                    <button class="btn book__btn">Заказать</button>
+                    <button class="btn book__btn">Order now</button>
                   </li>
                   <li class="swiper-slide book books__book" data-set="3">
-                    <img class="book__image" src="./img/books/3.jpg" loading="lazy" alt="Книга про буквы">
+                    <img class="book__image" src="./img/books/3.jpg" loading="lazy" alt="Book about letters">
                     <div class="book__textwrap">
-                      <span class="book__title">Книга про буквы</span>
-                      <span class="book__price">2&nbsp;200 руб</span>
-                      <span class="book__author">Гордон, Юрий</span>
+                      <span class="book__title">Book about letters</span>
+                      <span class="book__price">2&nbsp;200 rub</span>
+                      <span class="book__author">Gordon, Yuri</span>
                     </div>
-                    <button class="btn book__btn">Заказать</button>
+                    <button class="btn book__btn">Order now</button>
                   </li>
                   <li class="swiper-slide book books__book" data-set="4">
-                    <img class="book__image" src="./img/books/4.jpg" loading="lazy" alt="Николай Ильин">
+                    <img class="book__image" src="./img/books/4.jpg" loading="lazy" alt="Nikolai Ilyin">
                     <div class="book__textwrap">
-                      <span class="book__title">Николай Ильин</span>
-                      <span class="book__price">1&nbsp;100 руб</span>
-                      <span class="book__author">Кричевский, Владимир</span>
+                      <span class="book__title">Nikolai Ilyin</span>
+                      <span class="book__price">1&nbsp;100 rub</span>
+                      <span class="book__author">Krichevsky, Vladimir</span>
                     </div>
-                    <button class="btn book__btn">Заказать</button>
+                    <button class="btn book__btn">Order now</button>
                   </li>
                   <li class="swiper-slide book books__book" data-set="5">
-                    <img class="book__image" src="./img/books/5.jpg" loading="lazy" alt="Модульные сетки в&nbsp;графическом дизайне">
+                    <img class="book__image" src="./img/books/5.jpg" loading="lazy" alt="Modular Grids in Graphic Design">
                     <div class="book__textwrap">
-                      <span class="book__title">Модульные сетки в&nbsp;графическом дизайне</span>
-                      <span class="book__price">1&nbsp;450 руб</span>
-                      <span class="book__author">Мюллер-Брокманн, Йозеф</span>
+                      <span class="book__title">Modular Grids in Graphic Design</span>
+                      <span class="book__price">1&nbsp;450 rub</span>
+                      <span class="book__author">Müller-Brockmann, Joseph</span>
                     </div>
-                    <button class="btn book__btn">Заказать</button>
+                    <button class="btn book__btn">Order now</button>
                   </li>
                   <li class="swiper-slide book books__book" data-set="6">
-                    <img class="book__image" src="./img/books/6.jpg" loading="lazy" alt="Эволюция графических стилей">
+                    <img class="book__image" src="./img/books/6.jpg" loading="lazy" alt="The evolution of graphic styles">
                     <div class="book__textwrap">
-                      <span class="book__title">Эволюция графических стилей</span>
-                      <span class="book__price">3&nbsp;200 руб</span>
-                      <span class="book__author">Хеллер, Чваст</span>
+                      <span class="book__title">The evolution of graphic styles</span>
+                      <span class="book__price">3&nbsp;200 rub</span>
+                      <span class="book__author">Heller, Chwast</span>
                     </div>
-                    <button class="btn book__btn">Заказать</button>
+                    <button class="btn book__btn">Order now</button>
                   </li>
                   <li class="swiper-slide book books__book" data-set="7">
-                    <img class="book__image" src="./img/books/7.jpg" loading="lazy" alt="Исскуство и&nbsp;визуальное восприятие">
+                    <img class="book__image" src="./img/books/7.jpg" loading="lazy" alt="Art and&nbsp;visual perception">
                     <div class="book__textwrap">
-                      <span class="book__title">Исскуство и&nbsp;визуальное восприятие</span>
-                      <span class="book__price">2&nbsp;200 руб</span>
-                      <span class="book__author">Арнхейм, Рудольф</span>
+                      <span class="book__title">Art and&nbsp;visual perception</span>
+                      <span class="book__price">2&nbsp;200 rub</span>
+                      <span class="book__author">Arnheim, Rudolf</span>
                     </div>
-                    <button class="btn book__btn">Заказать</button>
+                    <button class="btn book__btn">Order now</button>
                   </li>
                 </ul>
               </div>
@@ -1824,25 +1799,13 @@
     <section class="projects" id="projects">
       <div class="container projects__container">
         <div class="content projects__content">
-          <h2 class="heading projects__heading">Проекты</h2>
+          <h2 class="heading projects__heading">Projects</h2>
           <p class="text projects__descr">
-            Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно
-            фиксирует необходимость своевременного выполнения сверхзадачи. А&nbsp;ещё независимые государства смешаны
-            с&nbsp;не&nbsp;уникальными данными до&nbsp;степени совершенной неузнаваемости, из-за чего возрастает
-            их&nbsp;статус бесполезности. Прежде всего, постоянное информационно-пропагандистское
-            <button class="btn projects__tip" id="tip-1" aria-label="Подсказка">i</button>
-            обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых
-            решений. И&nbsp;нет сомнений, что действия представителей оппозиции могут быть рассмотрены
-            <button class="btn projects__tip" id="tip-2" aria-label="Подсказка">i</button>
-            исключительно в&nbsp;разрезе маркетинговых и&nbsp;финансовых
-            <button class="btn projects__tip" id="tip-3" aria-label="Подсказка">i</button>
-            предпосылок. Банальные, но&nbsp;неопровержимые выводы, а&nbsp;также представители современных социальных
-            резервов призывают нас к&nbsp;новым свершениям, которые, в&nbsp;свою очередь, должны быть смешаны
-            с&nbsp;не&nbsp;уникальными данными до&nbsp;степени совершенной неузнаваемости. Подробнее:
-            <a class="link projects__link" href="#about" aria-label="О нас">blanchard-art.ru/projects/about</a>
+            Preliminary Findings: Continuous outreach to our activities is clearly fixes the need for timely completion of the super-task. And&nbsp;still independent states are mixed with&nbsp;not&nbsp;unique data to&nbsp;the degree of complete unrecognizability, which increases their&nbsp;status of worthlessness. First of all, constant outreach <button class="btn projects__tip" id="tip-1" aria-label="Hint">i</button> ensuring our activities unambiguously fixes the need for economic feasibility of the adopted solutions. And&nbsp;there is no doubt that the actions of opposition representatives can be considered <button class="btn projects__tip" id="tip-2" aria-label="Hint">i</button> exclusively in terms of&nbsp;marketing and&nbsp;financial <button class="btn projects__tip" id="tip-3" aria-label="Hint">i</button> prerequisites. Banal, but&nbsp;irrefutable conclusions, and&nbsp;also representatives of modern social reserves call us to & nbsp; new achievements, which, in turn, must be mixed with&nbsp;not&nbsp;unique data to&nbsp;the degree of complete unrecognizability. More: 
+            <a class="link projects__link" href="#about" aria-label="About">blanchard-art.ru/projects/about</a>
           </p>
 
-          <h3 class="heading projects__caption">Партнёры проектов:</h3>
+          <h3 class="heading projects__caption">Project partners:</h3>
 
           <div class="projects__swiper-container">
             <div class="projects-button-prev swiper-button-prev"></div>
@@ -1851,47 +1814,47 @@
               <div class="swiper-wrapper projects__swiper-wrapper">
                 <div class="swiper-slide projects__slide" data-set="1">
                   <a class="link projects__partners-link" href="">
-                    <img class="projects__partners-img" src="./img/projects/1.jpg" loading="lazy" alt="Партнёр 1">
+                    <img class="projects__partners-img" src="./img/projects/1.jpg" loading="lazy" alt="Partner 1">
                   </a>
                 </div>
                 <div class="swiper-slide projects__slide" data-set="2">
                   <a class="link projects__partners-link" href="">
-                    <img class="projects__partners-img" src="./img/projects/2.jpg" loading="lazy" alt="Партнёр 2">
+                    <img class="projects__partners-img" src="./img/projects/2.jpg" loading="lazy" alt="Partner 2">
                   </a>
                 </div>
                 <div class="swiper-slide projects__slide" data-set="3">
                   <a class="link projects__partners-link" href="">
-                    <img class="projects__partners-img" src="./img/projects/3.jpg" loading="lazy" alt="Партнёр 3">
+                    <img class="projects__partners-img" src="./img/projects/3.jpg" loading="lazy" alt="Partner 3">
                   </a>
                 </div>
                 <div class="swiper-slide projects__slide" data-set="4">
                   <a class="link projects__partners-link" href="">
-                    <img class="projects__partners-img" src="./img/projects/4.jpg" loading="lazy" alt="Партнёр 4">
+                    <img class="projects__partners-img" src="./img/projects/4.jpg" loading="lazy" alt="Partner 4">
                   </a>
                 </div>
                 <div class="swiper-slide projects__slide" data-set="5">
                   <a class="link projects__partners-link" href="">
-                    <img class="projects__partners-img" src="./img/projects/5.jpg" loading="lazy" alt="Партнёр 5">
+                    <img class="projects__partners-img" src="./img/projects/5.jpg" loading="lazy" alt="Partner 5">
                   </a>
                 </div>
                 <div class="swiper-slide projects__slide" data-set="6">
                   <a class="link projects__partners-link" href="">
-                    <img class="projects__partners-img" src="./img/projects/6.jpg" loading="lazy" alt="Партнёр 6">
+                    <img class="projects__partners-img" src="./img/projects/6.jpg" loading="lazy" alt="Partner 6">
                   </a>
                 </div>
                 <div class="swiper-slide projects__slide" data-set="7">
                   <a class="link projects__partners-link" href="">
-                    <img class="projects__partners-img" src="./img/projects/7.jpg" loading="lazy" alt="Партнёр 7">
+                    <img class="projects__partners-img" src="./img/projects/7.jpg" loading="lazy" alt="Partner 7">
                   </a>
                 </div>
                 <div class="swiper-slide projects__slide" data-set="8">
                   <a class="link projects__partners-link" href="">
-                    <img class="projects__partners-img" src="./img/projects/8.jpg" loading="lazy" alt="Партнёр 8">
+                    <img class="projects__partners-img" src="./img/projects/8.jpg" loading="lazy" alt="Partner 8">
                   </a>
                 </div>
                 <div class="swiper-slide projects__slide" data-set="9">
                   <a class="link projects__partners-link" href="">
-                    <img class="projects__partners-img" src="./img/projects/9.jpg" loading="lazy" alt="Партнёр 9">
+                    <img class="projects__partners-img" src="./img/projects/9.jpg" loading="lazy" alt="Partner 9">
                   </a>
                 </div>
               </div>
@@ -1903,39 +1866,39 @@
 
     <section class="contacts" id="contacts">
       <div class="container">
-        <h2 class="heading contacts__heading">Контакты</h2>
+        <h2 class="heading contacts__heading">Contacts</h2>
       </div>
       <div class="contacts__divider"></div>
       <div class="container contacts__container">
         <div class="content contacts__content">
           <div class="contacts__wrapper">
             <address class="address contacts__address">
-              <p class="address__caption">Шоурум &#8470;&nbsp;4</p>
-              <p class="address__descr">Леонтьевский переулок, дом 5/1</p>
+              <p class="address__caption">Showroom &#8470;&nbsp;4</p>
+              <p class="address__descr">Leontievsky lane, 5/1</p>
             </address>
 
             <form class="form contacts__form" id="contacts__form" action="mail.php" method="POST">
-              <h3 class="form__caption">Заказать обратный звонок</h3>
+              <h3 class="form__caption">Order call back</h3>
               <label class="form__label" for="name">
-                <input class="form__input" type="text" name="name" id="name" data-validate-field="name" placeholder="Имя*">
+                <input class="form__input" type="text" name="name" id="name" data-validate-field="name" placeholder="Name*">
               </label>
               <label class="form__label" for="tel">
-                <input class="form__input tel" type="tel" name="tel" id="tel" data-validate-field="tel" placeholder="Телефон*">
+                <input class="form__input tel" type="tel" name="tel" id="tel" data-validate-field="tel" placeholder="Phone*">
               </label>
-              <button class="btn form__btn form__btn-modal" type="submit">Заказать</button>
+              <button class="btn form__btn form__btn-modal" type="submit">Order now</button>
             </form>
 
             <div class="modal contacts__modal">
               <div class="modal__window window" data-target="sent">
                 <div class="window__content">
-                  <span class="window__title">Контакты успешно отправлены!</span>
-                  <p class="text window__descr">Очень скоро мы с вами свяжемся</p>
+                  <span class="window__title">Contacts sent successfully!</span>
+                  <p class="text window__descr">We will contact you very soon</p>
                 </div>
                 <button class="window__close"></button>
               </div>
             </div>
 
-            <h3 class="contacts__socials-heading">Связаться в&nbsp;один клик</h3>
+            <h3 class="contacts__socials-heading">Contact in&nbsp;one click</h3>
             <ul class="ul contacts__social-list">
               <li class="contacts__social-item">
                 <a class="link contacts__social-link" href="" aria-label="WhatsApp">
@@ -1967,7 +1930,7 @@
     <div class="container footer__container">
       <div class="content footer__content">
         <a class="link footer__logo-link">
-          <img class="logo footer__logo" src="img/logo.svg" loading="lazy" alt="Blanchard logo">
+          <img class="logo footer__logo" src="img/logo-en.svg" loading="lazy" alt="Blanchard logo">
         </a>
 
         <ul class="ul footer__socials-list">
@@ -2006,9 +1969,9 @@
   <script src="https://unpkg.com/tippy.js@6"></script>
   <script src="js/inputmask.min.js"></script>
   <script src="js/just-validate.min.js"></script>
-  <script src="js/index.js"></script>
+  <script src="js/index-en.js"></script>
   <script async src="//api-maps.yandex.ru/2.0/?apikey=78564415-6e1e-4a59-8452-6172d0c9b371&load=package.standard&lang=ru-RU&onload=getMap"></script>
-  <script async src="js/contacts.js"></script>
+  <script async src="js/contacts-en.js"></script>
 </body>
 
 </html>
